@@ -52,9 +52,6 @@ export default function Navbar() {
                 }`}
               >
                 {link.label}
-                {active && (
-                  <span className="absolute -bottom-2 left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-cyan-500" />
-                )}
               </Link>
             );
           })}
