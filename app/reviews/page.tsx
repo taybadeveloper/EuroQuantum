@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
-import { IconArrowRight, IconQuote } from "@/components/icons";
+import { IconQuote } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "Reviews",
@@ -129,38 +128,6 @@ export default function ReviewsPage() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* ---------- CTA ---------- */}
-      <section className="border-t border-slate-200 bg-sky-50 py-24">
-        <div className="mx-auto max-w-5xl px-6">
-          <Reveal>
-            <div className="rounded-3xl bg-cyan-500/40 p-px">
-              <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-16 text-center md:px-16">
-                <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-cyan-500/[0.12] blur-[100px]" />
-                <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-violet-600/[0.14] blur-[100px]" />
-                <div className="relative">
-                  <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-                    Join the Traders Who <span className="text-gradient">Count On Us</span>
-                  </h2>
-                  <p className="mx-auto mt-5 max-w-xl leading-relaxed text-slate-600">
-                    Sign up free, start from AU$250, and let the AI do the heavy
-                    market research for you.
-                  </p>
-                  <div className="mt-9">
-                    <Link
-                      href="/get-started"
-                      className="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
-                    >
-                      Create My Free Account
-                      <IconArrowRight className="h-4 w-4" />
-                    </Link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </Reveal>
         </div>
       </section>
     </>
