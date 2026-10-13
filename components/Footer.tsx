@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
-import { IconMail, IconMapPin, IconPhone } from "./icons";
+import { IconMail } from "./icons";
 
 const currentYear = new Date().getFullYear();
 
@@ -59,19 +59,6 @@ export default function Footer() {
                 >
                   support@euroquantum-au.com
                 </a>
-              </li>
-              <li className="flex items-start justify-center gap-2.5 md:justify-start">
-                <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
-                <a
-                  href="tel:+61280000000"
-                  className="transition-colors hover:text-green-600"
-                >
-                  +61 2 8000 0000
-                </a>
-              </li>
-              <li className="flex items-start justify-center gap-2.5 md:justify-start">
-                <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
-                Sydney, NSW 2000, Australia
               </li>
             </ul>
           </div>
