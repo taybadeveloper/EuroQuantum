@@ -41,7 +41,7 @@ export default function GetStartedPage() {
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <div className="text-center">
-            <Reveal>
+            <Reveal className="hero-badge">
               <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
                 <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
                 Get Started
@@ -61,13 +61,13 @@ export default function GetStartedPage() {
               </p>
             </Reveal>
             <Reveal delay={300}>
-              <ul className="mt-9 space-y-3">
+              <ul className="hero-points mt-9 space-y-3">
                 {[
                   "Free sign-up — no deposit needed to start",
                   "Bank-level encryption keeps your details safe",
                   "Works in any browser — no app to download",
                 ].map((item) => (
-                  <li key={item} className="flex items-center justify-center gap-3 text-sm text-slate-700 xl:justify-start">
+                  <li key={item} className="flex items-center justify-center gap-3 text-sm text-slate-700">
                     <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-cyan-500/25 ring-1 ring-cyan-500/40">
                       <IconCheck className="h-3 w-3 text-cyan-600" />
                     </span>

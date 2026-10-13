@@ -109,6 +109,9 @@ body {
   .hero-points li {
     justify-content: flex-start;
   }
+  .hero-badge {
+    text-align: left;
+  }
 }
 
 @media (min-width: 75rem) {
@@ -118,5 +121,8 @@ body {
   }
   .mouse-device .hero-points li {
     justify-content: flex-start;
+  }
+  .mouse-device .hero-badge {
+    text-align: left;
   }
 }
