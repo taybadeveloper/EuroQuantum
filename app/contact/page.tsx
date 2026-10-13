@@ -41,11 +41,11 @@ export default function ContactPage() {
     <>
       {/* ---------- Page hero ---------- */}
       <section className="relative overflow-hidden border-b border-slate-300 pb-16 pt-40">
-        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-green-500/[0.12] blur-[120px]" />
-        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-green-500/[0.13] blur-[120px]" />
+        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
+        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6 text-center">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
+            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
               <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
               Contact Us
             </span>
@@ -89,7 +89,7 @@ export default function ContactPage() {
             ))}
 
             <Reveal delay={380}>
-              <div className="flex items-start gap-4 rounded-2xl border border-green-500/30 bg-green-500/[0.08] p-6">
+              <div className="flex items-start gap-4 rounded-2xl border border-green-500/30 bg-white p-6">
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-green-500/25 text-green-600 ring-1 ring-green-500/40">
                   <IconHeadset className="h-5 w-5" />
                 </span>

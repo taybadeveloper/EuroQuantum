@@ -94,7 +94,7 @@ export default function SignupForm() {
 
   if (status === "sent") {
     return (
-      <div className="flex h-full flex-col items-center justify-center rounded-2xl border border-green-400/20 bg-green-400/[0.05] p-10 text-center">
+      <div className="flex h-full flex-col items-center justify-center rounded-2xl border border-green-400/20 bg-white p-10 text-center">
         <span className="grid h-16 w-16 place-items-center rounded-full bg-green-500/20 text-green-600 ring-1 ring-green-500/30">
           <IconCheck className="h-8 w-8" />
         </span>

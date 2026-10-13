@@ -16,7 +16,7 @@ export default function SectionHeading({
 
   return (
     <div className={alignment}>
-      <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
+      <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
         <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
         {eyebrow}
       </span>

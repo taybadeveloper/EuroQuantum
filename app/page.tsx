@@ -239,13 +239,13 @@ export default function Home() {
     <>
       {/* ---------- Hero ---------- */}
       <section className="relative overflow-hidden pb-20 pt-40">
-        <div className="pointer-events-none absolute -top-32 left-1/4 h-96 w-96 rounded-full bg-green-500/[0.13] blur-[130px]" />
-        <div className="pointer-events-none absolute right-0 top-40 h-96 w-96 rounded-full bg-green-500/[0.14] blur-[130px]" />
+        <div className="pointer-events-none absolute -top-32 left-1/4 h-96 w-96 rounded-full bg-slate-500/[0.05] blur-[130px]" />
+        <div className="pointer-events-none absolute right-0 top-40 h-96 w-96 rounded-full bg-slate-500/[0.05] blur-[130px]" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <div className="text-center">
             <Reveal className="hero-badge">
-              <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-green-600">
+              <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-green-600">
                 <span className="relative flex h-2 w-2">
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600" />
                 </span>
@@ -313,7 +313,7 @@ export default function Home() {
 
       {/* ---------- What Is EuroQuantum ---------- */}
       <section className="relative overflow-hidden py-24">
-        <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-green-500/[0.07] blur-[120px]" />
+        <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-stone-50 blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -461,7 +461,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <Reveal>
             <div className="text-center lg:text-left">
-              <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
+              <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
                 <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
                 Built for Australia
               </span>
@@ -517,7 +517,7 @@ export default function Home() {
                     Manual Trading
                   </p>
                 </div>
-                <div className="bg-green-500/[0.07] px-5 py-5 text-center">
+                <div className="bg-stone-50 px-5 py-5 text-center">
                   <p className="text-gradient flex items-center justify-center gap-1.5 text-xs font-bold uppercase tracking-[0.12em]">
                     <IconSparkles className="h-3.5 w-3.5" />
                     EuroQuantum
@@ -537,7 +537,7 @@ export default function Home() {
                   <div className="px-5 py-3 text-center text-sm text-slate-600 lg:py-4">
                     {row.manual}
                   </div>
-                  <div className="bg-green-500/[0.06] px-5 py-3 text-center text-sm font-medium text-slate-900 lg:py-4">
+                  <div className="bg-stone-50 px-5 py-3 text-center text-sm font-medium text-slate-900 lg:py-4">
                     {row.ai}
                   </div>
                 </div>
@@ -552,7 +552,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <Reveal>
             <div className="text-center lg:text-left">
-              <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
+              <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
                 <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
                 Trust &amp; Safety
               </span>
@@ -647,8 +647,8 @@ export default function Home() {
           <Reveal>
             <div className="rounded-3xl bg-green-500/40 p-px">
               <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-16 text-center md:px-16">
-                <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-green-500/[0.12] blur-[100px]" />
-                <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-green-500/[0.14] blur-[100px]" />
+                <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-slate-500/[0.05] blur-[100px]" />
+                <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-slate-500/[0.05] blur-[100px]" />
                 <div className="relative">
                   <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 md:text-5xl">
                     Ready to Try a Smarter{" "}

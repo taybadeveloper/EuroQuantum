@@ -75,11 +75,11 @@ export default function HowItWorksPage() {
     <>
       {/* ---------- Page hero ---------- */}
       <section className="relative overflow-hidden border-b border-slate-300 pb-16 pt-40">
-        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-green-500/[0.12] blur-[120px]" />
-        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-green-500/[0.13] blur-[120px]" />
+        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
+        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6 text-center">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
+            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
               <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
               How It Works
             </span>
@@ -172,8 +172,8 @@ export default function HowItWorksPage() {
           <Reveal>
             <div className="rounded-3xl bg-green-500/40 p-px">
               <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-16 text-center md:px-16">
-                <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-green-500/[0.12] blur-[100px]" />
-                <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-green-500/[0.14] blur-[100px]" />
+                <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-slate-500/[0.05] blur-[100px]" />
+                <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-slate-500/[0.05] blur-[100px]" />
                 <div className="relative">
                   <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
                     Ready for <span className="text-gradient">Step 1?</span>
