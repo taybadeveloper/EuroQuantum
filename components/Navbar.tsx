@@ -43,14 +43,14 @@ export default function Navbar() {
       <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6">
         <Logo />
 
-        <div className="hidden items-center gap-6 md:flex">
+        <div className="hidden items-center gap-4 md:flex lg:gap-6">
           {links.map((link) => {
             const active = pathname === link.href;
             return (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`relative text-sm font-medium transition-colors ${
+                className={`relative whitespace-nowrap text-sm font-medium transition-colors ${
                   active ? "text-slate-900" : "text-slate-600 hover:text-slate-900"
                 }`}
               >
@@ -85,7 +85,7 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`block border-b border-slate-100 py-3.5 text-sm font-medium transition-colors ${
+                className={`block whitespace-nowrap border-b border-slate-100 py-3.5 text-sm font-medium transition-colors ${
                   active ? "text-cyan-600" : "text-slate-700 hover:text-slate-900"
                 }`}
               >
