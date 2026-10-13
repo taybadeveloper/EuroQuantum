@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import Link from "next/link";
 import Reveal from "@/components/Reveal";
 import SectionHeading from "@/components/SectionHeading";
 import FaqAccordion from "@/components/FaqAccordion";
-import { IconArrowRight } from "@/components/icons";
 
 export const metadata: Metadata = {
   title: "FAQs",
@@ -116,44 +114,6 @@ export default function FaqsPage() {
           <Reveal delay={150}>
             <div className="mt-12">
               <FaqAccordion items={faqs} />
-            </div>
-          </Reveal>
-        </div>
-      </section>
-
-      {/* ---------- CTA ---------- */}
-      <section className="py-24">
-        <div className="mx-auto max-w-5xl px-6">
-          <Reveal>
-            <div className="rounded-3xl bg-cyan-500/40 p-px">
-              <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-16 text-center md:px-16">
-                <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-cyan-500/[0.12] blur-[100px]" />
-                <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-violet-600/[0.14] blur-[100px]" />
-                <div className="relative">
-                  <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-                    Still Have a <span className="text-gradient">Question?</span>
-                  </h2>
-                  <p className="mx-auto mt-5 max-w-xl leading-relaxed text-slate-600">
-                    Our Australian support team is happy to help. Or create your
-                    free account and see the platform for yourself.
-                  </p>
-                  <div className="mt-9 flex flex-col items-center justify-center gap-4 sm:flex-row">
-                    <Link
-                      href="/get-started"
-                      className="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
-                    >
-                      Get Started Free
-                      <IconArrowRight className="h-4 w-4" />
-                    </Link>
-                    <Link
-                      href="/contact"
-                      className="inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-9 py-3.5 text-sm font-semibold text-slate-700 transition-all duration-300 hover:border-cyan-500/50 hover:text-cyan-700"
-                    >
-                      Contact Support
-                    </Link>
-                  </div>
-                </div>
-              </div>
             </div>
           </Reveal>
         </div>
