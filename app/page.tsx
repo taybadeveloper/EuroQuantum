@@ -505,7 +505,7 @@ export default function Home() {
           <Reveal>
             <SectionHeading
               eyebrow="The Difference"
-              title="AI-Assisted Trading vs Doing It All Yourself"
+              title="AI-Assisted Trading vs Manual Trading"
             />
           </Reveal>
           <Reveal delay={150}>
