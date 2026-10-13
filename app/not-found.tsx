@@ -29,7 +29,7 @@ export default function NotFound() {
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/"
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
+              className="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
             >
               <IconHome className="h-4 w-4" />
               Back to Home

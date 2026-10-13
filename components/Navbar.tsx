@@ -53,14 +53,14 @@ export default function Navbar() {
               >
                 {link.label}
                 {active && (
-                  <span className="absolute -bottom-2 left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500" />
+                  <span className="absolute -bottom-2 left-1/2 h-1 w-1 -translate-x-1/2 rounded-full bg-cyan-500" />
                 )}
               </Link>
             );
           })}
           <Link
             href="/get-started"
-            className="rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
+            className="rounded-full bg-cyan-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
           >
             Get Started
           </Link>
@@ -95,7 +95,7 @@ export default function Navbar() {
           })}
           <Link
             href="/get-started"
-            className="mt-5 block rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-sm"
+            className="mt-5 block rounded-full bg-cyan-600 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-sm"
           >
             Get Started
           </Link>

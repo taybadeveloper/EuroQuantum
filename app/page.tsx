@@ -272,7 +272,7 @@ export default function Home() {
                   "Start from AU$250",
                 ].map((item) => (
                   <li key={item} className="flex items-center justify-center gap-3 text-sm text-slate-700">
-                    <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-gradient-to-br from-cyan-500/25 to-violet-600/25 ring-1 ring-cyan-500/40">
+                    <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-cyan-500/25 ring-1 ring-cyan-500/40">
                       <IconCheck className="h-3 w-3 text-cyan-600" />
                     </span>
                     {item}
@@ -296,7 +296,7 @@ export default function Home() {
           {trustItems.map((item, i) => (
             <Reveal key={item.title} delay={i * 80}>
               <div className="flex items-center justify-center gap-4 px-2 py-8 text-center lg:justify-start lg:px-8 lg:text-left">
-                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-cyan-500/15 to-violet-600/15 text-cyan-600 ring-1 ring-slate-900/10">
+                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10">
                   {item.icon}
                 </span>
                 <div>
@@ -364,11 +364,11 @@ export default function Home() {
             />
           </Reveal>
           <div className="relative mt-14 grid gap-10 md:grid-cols-3">
-            <div className="absolute left-[16.6%] right-[16.6%] top-7 hidden h-px bg-gradient-to-r from-cyan-500/40 via-violet-500/40 to-cyan-500/40 md:block" />
+            <div className="absolute left-[16.6%] right-[16.6%] top-7 hidden h-px bg-cyan-500/40 md:block" />
             {steps.map((step, i) => (
               <Reveal key={step.number} delay={i * 120}>
                 <div className="relative text-center">
-                  <span className="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-cyan-500 to-violet-600 font-display text-lg font-bold text-white shadow-md">
+                  <span className="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-cyan-600 font-display text-lg font-bold text-white shadow-md">
                     {step.number}
                   </span>
                   <h3 className="mt-5 font-display text-xl font-semibold text-slate-900">
@@ -385,7 +385,7 @@ export default function Home() {
             <div className="mt-14 text-center">
               <Link
                 href="#signup"
-                className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
+                className="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
               >
                 Start Step 1 Now
                 <IconArrowRight className="h-4 w-4" />
@@ -409,7 +409,7 @@ export default function Home() {
             {markets.map((market, i) => (
               <Reveal key={market.title} delay={i * 80} className="h-full">
                 <div className="group h-full rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:border-cyan-500/50 hover:bg-sky-50">
-                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500/15 to-violet-600/15 text-cyan-600 ring-1 ring-slate-900/10 transition-colors duration-300">
+                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10 transition-colors duration-300">
                     {market.icon}
                   </span>
                   <h3 className="mt-5 font-display text-lg font-semibold text-slate-900">
@@ -438,7 +438,7 @@ export default function Home() {
             {features.map((feature, i) => (
               <Reveal key={feature.title} delay={i * 80} className="h-full">
                 <div className="flex h-full gap-4 rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:border-cyan-500/50 hover:bg-sky-50">
-                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500/15 to-violet-600/15 text-cyan-600 ring-1 ring-slate-900/10">
+                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10">
                     {feature.icon}
                   </span>
                   <div>
@@ -462,7 +462,7 @@ export default function Home() {
           <Reveal>
             <div className="text-center lg:text-left">
               <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
-                <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500" />
+                <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
                 Built for Australia
               </span>
               <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
@@ -483,7 +483,7 @@ export default function Home() {
             {aussieAdvantages.map((item, i) => (
               <Reveal key={item.title} delay={i * 100}>
                 <div className="group h-full rounded-2xl border border-slate-200 bg-white p-6 text-center transition-all duration-300 hover:border-cyan-500/50 hover:bg-sky-50 sm:text-left">
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500/15 to-violet-600/15 text-cyan-600 ring-1 ring-slate-900/10">
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10">
                     {item.icon}
                   </span>
                   <h3 className="mt-4 font-display text-lg font-semibold text-slate-900">
@@ -517,7 +517,7 @@ export default function Home() {
                     Manual Trading
                   </p>
                 </div>
-                <div className="bg-gradient-to-b from-cyan-500/[0.07] to-violet-600/[0.07] px-5 py-5 text-center">
+                <div className="bg-cyan-500/[0.07] px-5 py-5 text-center">
                   <p className="text-gradient flex items-center justify-center gap-1.5 text-xs font-bold uppercase tracking-[0.12em]">
                     <IconSparkles className="h-3.5 w-3.5" />
                     Striluxon AI
@@ -537,7 +537,7 @@ export default function Home() {
                   <div className="px-5 py-3 text-center text-sm text-slate-600 lg:py-4">
                     {row.manual}
                   </div>
-                  <div className="bg-gradient-to-b from-cyan-500/[0.06] to-violet-600/[0.06] px-5 py-3 text-center text-sm font-medium text-slate-900 lg:py-4">
+                  <div className="bg-cyan-500/[0.06] px-5 py-3 text-center text-sm font-medium text-slate-900 lg:py-4">
                     {row.ai}
                   </div>
                 </div>
@@ -553,7 +553,7 @@ export default function Home() {
           <Reveal>
             <div className="text-center lg:text-left">
               <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
-                <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500" />
+                <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
                 Trust &amp; Safety
               </span>
               <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
@@ -566,7 +566,7 @@ export default function Home() {
               <ul className="mt-8 space-y-5">
                 {safetyPoints.map((point) => (
                   <li key={point.title} className="flex items-start gap-4">
-                    <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-gradient-to-br from-cyan-500/25 to-violet-600/25 ring-1 ring-cyan-500/40">
+                    <span className="mt-0.5 grid h-6 w-6 shrink-0 place-items-center rounded-full bg-cyan-500/25 ring-1 ring-cyan-500/40">
                       <IconCheck className="h-3.5 w-3.5 text-cyan-600" />
                     </span>
                     <div className="text-left">
@@ -600,7 +600,7 @@ export default function Home() {
 
           <Reveal delay={150}>
             <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-lg shadow-slate-200/60 md:p-10">
-                <span className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-gradient-to-br from-cyan-500/20 to-violet-600/20 text-cyan-600 ring-1 ring-cyan-500/40">
+                <span className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-cyan-500/20 text-cyan-600 ring-1 ring-cyan-500/40">
                   <IconShield className="h-8 w-8" />
                 </span>
                 <h3 className="mt-6 font-display text-2xl font-bold text-slate-900">
@@ -613,7 +613,7 @@ export default function Home() {
                 </p>
                 <Link
                   href="#signup"
-                  className="mt-8 inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
+                  className="mt-8 inline-flex items-center gap-2 rounded-full bg-cyan-600 px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
                 >
                   Open My Free Account
                   <IconArrowRight className="h-4 w-4" />
@@ -645,7 +645,7 @@ export default function Home() {
       <section className="py-24">
         <div className="mx-auto max-w-5xl px-6">
           <Reveal>
-            <div className="rounded-3xl bg-gradient-to-r from-cyan-500/40 via-violet-600/40 to-cyan-500/40 p-px">
+            <div className="rounded-3xl bg-cyan-500/40 p-px">
               <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-16 text-center md:px-16">
                 <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-cyan-500/[0.12] blur-[100px]" />
                 <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-violet-600/[0.14] blur-[100px]" />
@@ -661,7 +661,7 @@ export default function Home() {
                   <div className="mt-9">
                     <Link
                       href="#signup"
-                      className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
+                      className="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
                     >
                       Create My Free Account
                       <IconArrowRight className="h-4 w-4" />

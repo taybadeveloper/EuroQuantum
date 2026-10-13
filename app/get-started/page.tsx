@@ -43,7 +43,7 @@ export default function GetStartedPage() {
           <div className="text-center">
             <Reveal>
               <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
-                <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500" />
+                <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
                 Get Started
               </span>
             </Reveal>
@@ -68,7 +68,7 @@ export default function GetStartedPage() {
                   "Works in any browser — no app to download",
                 ].map((item) => (
                   <li key={item} className="flex items-center justify-center gap-3 text-sm text-slate-700 xl:justify-start">
-                    <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-gradient-to-br from-cyan-500/25 to-violet-600/25 ring-1 ring-cyan-500/40">
+                    <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-cyan-500/25 ring-1 ring-cyan-500/40">
                       <IconCheck className="h-3 w-3 text-cyan-600" />
                     </span>
                     {item}
@@ -94,11 +94,11 @@ export default function GetStartedPage() {
             />
           </Reveal>
           <div className="relative mt-12 grid gap-10 md:grid-cols-3">
-            <div className="absolute left-[16.6%] right-[16.6%] top-7 hidden h-px bg-gradient-to-r from-cyan-500/40 via-violet-500/40 to-cyan-500/40 md:block" />
+            <div className="absolute left-[16.6%] right-[16.6%] top-7 hidden h-px bg-cyan-500/40 md:block" />
             {steps.map((step, i) => (
               <Reveal key={step.number} delay={i * 120}>
                 <div className="relative text-center">
-                  <span className="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-cyan-500 to-violet-600 font-display text-lg font-bold text-white shadow-md">
+                  <span className="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-cyan-600 font-display text-lg font-bold text-white shadow-md">
                     {step.number}
                   </span>
                   <h3 className="mt-5 font-display text-xl font-semibold text-slate-900">

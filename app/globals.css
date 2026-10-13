@@ -42,12 +42,9 @@ body {
   background: #94a3b8;
 }
 
-/* ---------- Gradient text ---------- */
+/* ---------- Accent text (single solid color) ---------- */
 .text-gradient {
-  background: linear-gradient(92deg, #0891b2 0%, #6366f1 50%, #7c3aed 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #0891b2;
 }
 
 /* ---------- Marquee ticker ---------- */
@@ -88,36 +85,23 @@ body {
 }
 
 /* ---------- Hero text alignment ----------
-   Heading + Paragraph + points:
-     < tablets + mobile (touch):            CENTER
-     Desktop (mouse, >= 1024px viewport):   LEFT
-   min-device-width rules: browser zoom se unaffected — desktop ki
-   device-width (e.g. 1600) 1536+ rehti hai chahe zoom kitna bhi ho,
-   is liye zoom hone par bhi desktop pe LEFT rehta hai.
+   Mobile + tablets (touch, ya koi bhi tablet width):   CENTER
+   Desktop (mouse, >= 1200px):                          LEFT
+     mouse-device class JS se lagti hai (maxTouchPoints === 0) —
+     zoom/scaling se unaffected, aur trackpad wale tablets pe
+     galat LEFT nahi hoti.
+   1536px+ viewport: LEFT (no-JS fallback for wide desktops)
 --------------------------------------------------------------------- */
-.hero-heading {
-  text-align: center;
-}
-
+.hero-heading,
 .hero-paragraph {
   text-align: center;
-}
-@media (min-width: 96rem) {
-  .hero-paragraph {
-    text-align: left;
-  }
 }
 
 .hero-points li {
   justify-content: center;
 }
+
 @media (min-width: 96rem) {
-  .hero-points li {
-    justify-content: flex-start;
-  }
-}
-
-@media (min-device-width: 96rem) {
   .hero-heading,
   .hero-paragraph {
     text-align: left;
@@ -127,15 +111,12 @@ body {
   }
 }
 
-/* Desktop (mouse + wide window): LEFT — pointer query device type pehchanta hai,
-   is liye zoom/scaling se viewport chhota ho tab bhi kaam karta hai.
-   Touch devices (tablets/mobile): is rule se bahar — CENTER rehta hai. */
-@media (pointer: fine) and (hover: hover) and (min-width: 64rem) {
-  .hero-heading,
-  .hero-paragraph {
+@media (min-width: 75rem) {
+  .mouse-device .hero-heading,
+  .mouse-device .hero-paragraph {
     text-align: left;
   }
-  .hero-points li {
+  .mouse-device .hero-points li {
     justify-content: flex-start;
   }
 }

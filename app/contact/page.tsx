@@ -46,7 +46,7 @@ export default function ContactPage() {
         <div className="relative mx-auto max-w-7xl px-6 text-center">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
-              <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500" />
+              <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
               Contact Us
             </span>
           </Reveal>
@@ -72,7 +72,7 @@ export default function ContactPage() {
             {contactInfo.map((item, i) => (
               <Reveal key={item.label} delay={i * 90}>
                 <div className="group flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:border-cyan-500/50 hover:bg-sky-50">
-                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-cyan-500/15 to-violet-600/15 text-cyan-600 ring-1 ring-slate-900/10">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10">
                     {item.icon}
                   </span>
                   <div>
@@ -89,8 +89,8 @@ export default function ContactPage() {
             ))}
 
             <Reveal delay={380}>
-              <div className="flex items-start gap-4 rounded-2xl border border-cyan-500/30 bg-gradient-to-br from-cyan-500/[0.08] to-violet-600/[0.08] p-6">
-                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-gradient-to-br from-cyan-500/25 to-violet-600/25 text-cyan-600 ring-1 ring-cyan-500/40">
+              <div className="flex items-start gap-4 rounded-2xl border border-cyan-500/30 bg-cyan-500/[0.08] p-6">
+                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cyan-500/25 text-cyan-600 ring-1 ring-cyan-500/40">
                   <IconHeadset className="h-5 w-5" />
                 </span>
                 <div>

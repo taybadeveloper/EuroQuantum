@@ -95,7 +95,7 @@ export default function SignupForm() {
   if (status === "sent") {
     return (
       <div className="flex h-full flex-col items-center justify-center rounded-2xl border border-emerald-400/20 bg-emerald-400/[0.05] p-10 text-center">
-        <span className="grid h-16 w-16 place-items-center rounded-full bg-gradient-to-br from-emerald-400/20 to-cyan-400/20 text-emerald-600 ring-1 ring-emerald-400/30">
+        <span className="grid h-16 w-16 place-items-center rounded-full bg-emerald-400/20 text-emerald-600 ring-1 ring-emerald-400/30">
           <IconCheck className="h-8 w-8" />
         </span>
         <h3 className="mt-6 font-display text-2xl font-bold text-slate-900">
@@ -197,7 +197,7 @@ export default function SignupForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="mt-6 w-full rounded-full bg-gradient-to-r from-cyan-500 to-violet-600 px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-300 disabled:cursor-not-allowed disabled:opacity-60"
+        className="mt-6 w-full rounded-full bg-cyan-600 px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-300 disabled:cursor-not-allowed disabled:opacity-60"
       >
         {status === "sending" ? "Creating Account..." : "Get Started Free"}
       </button>

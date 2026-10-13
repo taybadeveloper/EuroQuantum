@@ -45,7 +45,7 @@ export default function ServicesPage() {
         <div className="relative mx-auto max-w-7xl px-6 text-center">
           <Reveal>
             <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
-              <span className="h-1.5 w-1.5 rounded-full bg-gradient-to-r from-cyan-400 to-violet-500" />
+              <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
               Our Services
             </span>
           </Reveal>
@@ -86,11 +86,11 @@ export default function ServicesPage() {
             />
           </Reveal>
           <div className="relative mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="absolute left-[12.5%] right-[12.5%] top-7 hidden h-px bg-gradient-to-r from-cyan-500/40 via-violet-500/40 to-cyan-500/40 lg:block" />
+            <div className="absolute left-[12.5%] right-[12.5%] top-7 hidden h-px bg-cyan-500/40 lg:block" />
             {process.map((step, i) => (
               <Reveal key={step.number} delay={i * 110}>
                 <div className="relative text-center">
-                  <span className="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-gradient-to-br from-cyan-500 to-violet-600 font-display text-lg font-bold text-white shadow-md">
+                  <span className="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-cyan-600 font-display text-lg font-bold text-white shadow-md">
                     {step.number}
                   </span>
                   <h3 className="mt-5 font-display text-lg font-semibold text-slate-900">

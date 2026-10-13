@@ -13,7 +13,7 @@ export default function ServiceCard({ service, delay = 0 }: ServiceCardProps) {
     <Reveal delay={delay} className="h-full">
       <div className="group relative h-full overflow-hidden rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/50 hover:bg-sky-50 hover:shadow-md">
         <div className="pointer-events-none absolute -right-16 -top-16 h-40 w-40 rounded-full bg-cyan-500/10 opacity-0 blur-3xl transition-opacity duration-500 group-hover:opacity-100" />
-        <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500/15 to-violet-600/15 text-cyan-600 ring-1 ring-slate-900/10">
+        <div className="mb-5 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10">
           {service.icon}
         </div>
         <h3 className="font-display text-xl font-semibold text-slate-900">

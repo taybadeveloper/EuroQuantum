@@ -74,6 +74,12 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="flex min-h-full flex-col bg-sky-50 text-slate-900">
         <script
+          dangerouslySetInnerHTML={{
+            __html:
+              "if (navigator.maxTouchPoints === 0) document.documentElement.classList.add('mouse-device');",
+          }}
+        />
+        <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
         />
