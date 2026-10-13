@@ -10,8 +10,8 @@ export default function Logo() {
         <span className="absolute inset-0 rounded-xl ring-1 ring-white/25" />
       </span>
       <span className="flex flex-col leading-none text-left">
-        <span className="font-display text-lg font-bold tracking-tight text-green-600">
-          Euro<span className="text-gradient">Quantum</span>
+        <span className="font-display text-lg font-bold tracking-tight text-slate-900">
+          Euro<span className="text-green-600">Quantum</span>
         </span>
       </span>
     </Link>
