@@ -72,7 +72,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${poppins.variable} h-full antialiased`}
     >
-      <body className="flex min-h-full flex-col bg-stone-50 text-slate-900">
+      <body className="flex min-h-full flex-col bg-white text-slate-900">
         <script
           dangerouslySetInnerHTML={{
             __html:
