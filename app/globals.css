@@ -89,11 +89,12 @@ body {
 }
 
 /* ---------- Hero text alignment ----------
-   Mobile + tablets (touch, ya koi bhi tablet width):   CENTER
-   Desktop (mouse, >= 1200px):                          LEFT
-     mouse-device class JS se lagti hai (maxTouchPoints === 0) —
-     zoom/scaling se unaffected, aur trackpad wale tablets pe
-     galat LEFT nahi hoti.
+   Mobile + tablets (touch ya tablet widths):            CENTER
+   Desktop (mouse, 1200-1310px viewport):                LEFT
+     mouse-device class JS se lagti hai (maxTouchPoints === 0).
+     1200-1310px range = zoom/scaling wale desktops (e.g. 1600px
+     screen at 125% scaling ≈ 1263px viewport). Tablet widths
+     (1366+) is range se bahar hain — is liye CENTER rehti hain.
    1536px+ viewport: LEFT (no-JS fallback for wide desktops)
 --------------------------------------------------------------------- */
 .hero-heading,
@@ -118,7 +119,7 @@ body {
   }
 }
 
-@media (min-width: 75rem) {
+@media (min-width: 75rem) and (max-width: 81.9rem) {
   .mouse-device .hero-heading,
   .mouse-device .hero-paragraph {
     text-align: left;
