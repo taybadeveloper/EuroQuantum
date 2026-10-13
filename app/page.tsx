@@ -470,7 +470,7 @@ export default function Home() {
               </h2>
               <p className="mt-5 leading-relaxed text-slate-600">
                 Most trading tools are made for US or European hours. EuroQuantum
-                AI is set up for life in Australia.
+                is set up for life in Australia.
               </p>
               <p className="mt-5 leading-relaxed text-slate-600">
                 That is why more people are looking for an AI trading platform
