@@ -42,9 +42,9 @@ body {
   background: #94a3b8;
 }
 
-/* ---------- Accent text (single solid color) ---------- */
+/* ---------- Accent text (inherits heading color — one-color headings) ---------- */
 .text-gradient {
-  color: #0891b2;
+  color: inherit;
 }
 
 /* ---------- Marquee ticker ---------- */
