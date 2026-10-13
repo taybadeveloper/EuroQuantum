@@ -9,7 +9,6 @@ import { IconMenu, IconX } from "./icons";
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
-  { href: "/services", label: "Services" },
   { href: "/features", label: "Features" },
   { href: "/how-it-works", label: "How It Works" },
   { href: "/reviews", label: "Reviews" },
