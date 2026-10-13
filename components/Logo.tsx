@@ -13,9 +13,6 @@ export default function Logo() {
         <span className="font-display text-lg font-bold tracking-tight text-slate-900">
           Euro<span className="text-gradient">Quantum</span>
         </span>
-        <span className="mt-1 text-[9px] font-semibold uppercase tracking-[0.24em] text-slate-500">
-          AI Trading · Australia
-        </span>
       </span>
     </Link>
   );
