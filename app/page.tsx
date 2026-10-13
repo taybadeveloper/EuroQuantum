@@ -387,7 +387,7 @@ export default function Home() {
                 href="#signup"
                 className="inline-flex items-center gap-2 rounded-full bg-green-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
               >
-                Start Step 1 Now
+                Register Now
                 <IconArrowRight className="h-4 w-4" />
               </Link>
             </div>
