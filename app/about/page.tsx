@@ -82,12 +82,12 @@ export default function AboutPage() {
     <>
       {/* ---------- Page hero ---------- */}
       <section className="relative overflow-hidden border-b border-slate-300 pb-16 pt-40">
-        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-cyan-500/[0.12] blur-[120px]" />
-        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-violet-600/[0.13] blur-[120px]" />
+        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-green-500/[0.12] blur-[120px]" />
+        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-green-500/[0.13] blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6 text-center">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
-              <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
               About EuroQuantum
             </span>
           </Reveal>
@@ -138,7 +138,7 @@ export default function AboutPage() {
           <div className="grid gap-5">
             <Reveal delay={100}>
               <div className="rounded-2xl border border-slate-200 bg-white p-7 text-center lg:text-left">
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10">
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-green-500/15 text-green-600 ring-1 ring-slate-900/10">
                   <IconTarget className="h-6 w-6" />
                 </span>
                 <h3 className="mt-4 font-display text-xl font-semibold text-slate-900">
@@ -153,7 +153,7 @@ export default function AboutPage() {
             </Reveal>
             <Reveal delay={200}>
               <div className="rounded-2xl border border-slate-200 bg-white p-7 text-center lg:text-left">
-                <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10">
+                <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-green-500/15 text-green-600 ring-1 ring-slate-900/10">
                   <IconEye className="h-6 w-6" />
                 </span>
                 <h3 className="mt-4 font-display text-xl font-semibold text-slate-900">
@@ -170,7 +170,7 @@ export default function AboutPage() {
       </section>
 
       {/* ---------- Values ---------- */}
-      <section className="border-t border-slate-200 bg-sky-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-24">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -182,8 +182,8 @@ export default function AboutPage() {
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {values.map((value, i) => (
               <Reveal key={value.title} delay={i * 90} className="h-full">
-                <div className="h-full rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-500/50 hover:bg-sky-50">
-                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10">
+                <div className="h-full rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:-translate-y-1 hover:border-green-500/50 hover:bg-stone-50">
+                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-green-500/15 text-green-600 ring-1 ring-slate-900/10">
                     {value.icon}
                   </span>
                   <h3 className="mt-5 font-display text-lg font-semibold text-slate-900">
@@ -209,15 +209,15 @@ export default function AboutPage() {
             />
           </Reveal>
           <div className="relative mt-16">
-            <div className="absolute bottom-4 left-[19px] top-4 w-px bg-cyan-500/50" />
+            <div className="absolute bottom-4 left-[19px] top-4 w-px bg-green-500/50" />
             <div className="space-y-12">
               {milestones.map((milestone, i) => (
                 <Reveal key={milestone.year} delay={i * 80}>
                   <div className="relative flex gap-6 pl-0">
-                    <span className="relative z-10 mt-1 h-10 w-10 shrink-0 rounded-full border border-cyan-400/40 bg-white shadow-sm">
-                      <span className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-cyan-500" />
+                    <span className="relative z-10 mt-1 h-10 w-10 shrink-0 rounded-full border border-green-500/40 bg-white shadow-sm">
+                      <span className="absolute left-1/2 top-1/2 h-3 w-3 -translate-x-1/2 -translate-y-1/2 rounded-full bg-green-500" />
                     </span>
-                    <div className="rounded-2xl border border-slate-200 bg-white p-6 transition-colors duration-300 hover:border-cyan-500/40 md:ml-4">
+                    <div className="rounded-2xl border border-slate-200 bg-white p-6 transition-colors duration-300 hover:border-green-500/40 md:ml-4">
                       <span className="font-display text-sm font-bold tracking-widest text-gradient">
                         {milestone.year}
                       </span>

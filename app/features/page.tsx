@@ -86,12 +86,12 @@ export default function FeaturesPage() {
     <>
       {/* ---------- Page hero ---------- */}
       <section className="relative overflow-hidden border-b border-slate-300 pb-16 pt-40">
-        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-cyan-500/[0.12] blur-[120px]" />
-        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-violet-600/[0.13] blur-[120px]" />
+        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-green-500/[0.12] blur-[120px]" />
+        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-green-500/[0.13] blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6 text-center">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
-              <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
               Features
             </span>
           </Reveal>
@@ -110,7 +110,7 @@ export default function FeaturesPage() {
       </section>
 
       {/* ---------- Features grid ---------- */}
-      <section className="border-t border-slate-200 bg-sky-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-24">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -121,8 +121,8 @@ export default function FeaturesPage() {
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {features.map((feature, i) => (
               <Reveal key={feature.title} delay={i * 80} className="h-full">
-                <div className="flex h-full gap-4 rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:border-cyan-500/50 hover:bg-sky-50">
-                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10">
+                <div className="flex h-full gap-4 rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:border-green-500/50 hover:bg-stone-50">
+                  <span className="inline-flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-green-500/15 text-green-600 ring-1 ring-slate-900/10">
                     {feature.icon}
                   </span>
                   <div>
@@ -153,8 +153,8 @@ export default function FeaturesPage() {
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
             {markets.map((market, i) => (
               <Reveal key={market.title} delay={i * 80} className="h-full">
-                <div className="group h-full rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:border-cyan-500/50 hover:bg-sky-50">
-                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10 transition-colors duration-300">
+                <div className="group h-full rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:border-green-500/50 hover:bg-stone-50">
+                  <span className="inline-flex h-12 w-12 items-center justify-center rounded-xl bg-green-500/15 text-green-600 ring-1 ring-slate-900/10 transition-colors duration-300">
                     {market.icon}
                   </span>
                   <h3 className="mt-5 font-display text-lg font-semibold text-slate-900">
@@ -171,13 +171,13 @@ export default function FeaturesPage() {
       </section>
 
       {/* ---------- CTA ---------- */}
-      <section className="border-t border-slate-200 bg-sky-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-24">
         <div className="mx-auto max-w-5xl px-6">
           <Reveal>
-            <div className="rounded-3xl bg-cyan-500/40 p-px">
+            <div className="rounded-3xl bg-green-500/40 p-px">
               <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-16 text-center md:px-16">
-                <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-cyan-500/[0.12] blur-[100px]" />
-                <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-violet-600/[0.14] blur-[100px]" />
+                <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-green-500/[0.12] blur-[100px]" />
+                <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-green-500/[0.14] blur-[100px]" />
                 <div className="relative">
                   <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
                     Try These <span className="text-gradient">Features</span> Yourself
@@ -189,7 +189,7 @@ export default function FeaturesPage() {
                   <div className="mt-9">
                     <Link
                       href="/get-started"
-                      className="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
+                      className="inline-flex items-center gap-2 rounded-full bg-green-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
                     >
                       Get Started Free
                       <IconArrowRight className="h-4 w-4" />

@@ -23,7 +23,7 @@ export default function Ticker() {
             <span className="tabular-nums text-slate-500">{pair.price}</span>
             <span
               className={`tabular-nums font-medium ${
-                pair.change.startsWith("+") ? "text-emerald-600" : "text-rose-600"
+                pair.change.startsWith("+") ? "text-green-600" : "text-rose-600"
               }`}
             >
               {pair.change}
@@ -31,8 +31,8 @@ export default function Ticker() {
           </div>
         ))}
       </div>
-      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-sky-50 to-transparent" />
-      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-sky-50 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-stone-50 to-transparent" />
+      <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-stone-50 to-transparent" />
     </div>
   );
 }

@@ -31,7 +31,7 @@ export default function FaqAccordion({ items }: { items: FaqItem[] }) {
                 {item.q}
               </span>
               <IconX
-                className={`h-4 w-4 shrink-0 text-cyan-600 transition-transform duration-300 ${
+                className={`h-4 w-4 shrink-0 text-green-600 transition-transform duration-300 ${
                   isOpen ? "rotate-0" : "rotate-45"
                 }`}
               />

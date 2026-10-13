@@ -6,7 +6,7 @@ import PhoneInput, { countries, type Country } from "./PhoneInput";
 import { IconCheck } from "./icons";
 
 const inputClasses =
-  "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-500 outline-none transition focus:border-cyan-500/60 focus:bg-sky-50 focus:ring-2 focus:ring-cyan-500/20";
+  "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-500 outline-none transition focus:border-green-500/60 focus:bg-stone-50 focus:ring-2 focus:ring-green-500/20";
 
 export default function SignupForm() {
   const [status, setStatus] = useState<"idle" | "sending" | "sent">("idle");
@@ -94,8 +94,8 @@ export default function SignupForm() {
 
   if (status === "sent") {
     return (
-      <div className="flex h-full flex-col items-center justify-center rounded-2xl border border-emerald-400/20 bg-emerald-400/[0.05] p-10 text-center">
-        <span className="grid h-16 w-16 place-items-center rounded-full bg-emerald-400/20 text-emerald-600 ring-1 ring-emerald-400/30">
+      <div className="flex h-full flex-col items-center justify-center rounded-2xl border border-green-400/20 bg-green-400/[0.05] p-10 text-center">
+        <span className="grid h-16 w-16 place-items-center rounded-full bg-green-500/20 text-green-600 ring-1 ring-green-500/30">
           <IconCheck className="h-8 w-8" />
         </span>
         <h3 className="mt-6 font-display text-2xl font-bold text-slate-900">
@@ -111,7 +111,7 @@ export default function SignupForm() {
             setStatus("idle");
             setForm({ firstName: "", lastName: "", email: "", phone: "" });
           }}
-          className="mt-8 text-sm font-semibold text-cyan-600 transition-colors hover:text-cyan-700"
+          className="mt-8 text-sm font-semibold text-green-600 transition-colors hover:text-green-700"
         >
           Go back
         </button>
@@ -135,7 +135,7 @@ export default function SignupForm() {
       <div className="mt-6 grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="firstName" className="mb-2 block text-sm font-medium text-slate-700">
-            First Name <span className="text-cyan-600">*</span>
+            First Name <span className="text-green-600">*</span>
           </label>
           <input
             id="firstName"
@@ -148,7 +148,7 @@ export default function SignupForm() {
         </div>
         <div>
           <label htmlFor="lastName" className="mb-2 block text-sm font-medium text-slate-700">
-            Last Name <span className="text-cyan-600">*</span>
+            Last Name <span className="text-green-600">*</span>
           </label>
           <input
             id="lastName"
@@ -163,7 +163,7 @@ export default function SignupForm() {
 
       <div className="mt-5">
         <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-700">
-          Email <span className="text-cyan-600">*</span>
+          Email <span className="text-green-600">*</span>
         </label>
         <input
           id="email"
@@ -177,7 +177,7 @@ export default function SignupForm() {
 
       <div className="mt-5">
         <label htmlFor="phone" className="mb-2 block text-sm font-medium text-slate-700">
-          Phone <span className="text-cyan-600">*</span>
+          Phone <span className="text-green-600">*</span>
         </label>
         <PhoneInput
           id="phone"
@@ -197,7 +197,7 @@ export default function SignupForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="mt-6 w-full rounded-full bg-cyan-600 px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-300 disabled:cursor-not-allowed disabled:opacity-60"
+        className="mt-6 w-full rounded-full bg-green-600 px-6 py-3.5 text-sm font-semibold text-white transition-transform duration-300 disabled:cursor-not-allowed disabled:opacity-60"
       >
         {status === "sending" ? "Creating Account..." : "Get Started Free"}
       </button>
@@ -208,7 +208,7 @@ export default function SignupForm() {
           type="checkbox"
           checked={agreed}
           onChange={(e) => setAgreed(e.target.checked)}
-          className="mt-0.5 h-4 w-4 shrink-0 cursor-pointer accent-cyan-600"
+          className="mt-0.5 h-4 w-4 shrink-0 cursor-pointer accent-green-600"
         />
         <label
           htmlFor="terms"
@@ -217,14 +217,14 @@ export default function SignupForm() {
           I agree to the{" "}
           <Link
             href="/terms-and-conditions"
-            className="text-cyan-600 transition-colors hover:text-cyan-700"
+            className="text-green-600 transition-colors hover:text-green-700"
           >
             Terms &amp; Conditions
           </Link>{" "}
           and{" "}
           <Link
             href="/privacy-policy"
-            className="text-cyan-600 transition-colors hover:text-cyan-700"
+            className="text-green-600 transition-colors hover:text-green-700"
           >
             Privacy Policy
           </Link>

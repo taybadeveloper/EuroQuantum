@@ -53,12 +53,12 @@ export default function ReviewsPage() {
     <>
       {/* ---------- Page hero ---------- */}
       <section className="relative overflow-hidden border-b border-slate-300 pb-16 pt-40">
-        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-cyan-500/[0.12] blur-[120px]" />
-        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-violet-600/[0.13] blur-[120px]" />
+        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-green-500/[0.12] blur-[120px]" />
+        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-green-500/[0.13] blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6 text-center">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
-              <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
               Reviews
             </span>
           </Reveal>
@@ -77,7 +77,7 @@ export default function ReviewsPage() {
       </section>
 
       {/* ---------- Rating summary ---------- */}
-      <section className="border-t border-slate-200 bg-sky-50 py-16">
+      <section className="border-t border-slate-200 bg-stone-50 py-16">
         <div className="mx-auto grid max-w-4xl gap-4 px-6 sm:grid-cols-3">
           {ratingSummary.map((stat, i) => (
             <Reveal key={stat.label} delay={i * 80}>
@@ -106,8 +106,8 @@ export default function ReviewsPage() {
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {reviews.map((review, i) => (
               <Reveal key={review.name} delay={i * 80} className="h-full">
-                <div className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:border-cyan-500/50 hover:bg-sky-50">
-                  <IconQuote className="h-7 w-7 text-cyan-600/40" />
+                <div className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-7 transition-all duration-300 hover:border-green-500/50 hover:bg-stone-50">
+                  <IconQuote className="h-7 w-7 text-green-600/40" />
                   <p className="mt-4 flex-1 text-sm leading-relaxed text-slate-600">
                     &ldquo;{review.text}&rdquo;
                   </p>
@@ -120,7 +120,7 @@ export default function ReviewsPage() {
                         {review.location}
                       </p>
                     </div>
-                    <span className="text-sm font-semibold tracking-wider text-amber-500">
+                    <span className="text-sm font-semibold tracking-wider text-green-500">
                       ★★★★★
                     </span>
                   </div>

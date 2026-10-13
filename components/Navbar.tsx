@@ -67,7 +67,7 @@ export default function Navbar() {
           })}
           <Link
             href="/get-started"
-            className="hidden rounded-full bg-cyan-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md lg:inline-flex"
+            className="hidden rounded-full bg-green-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md lg:inline-flex"
           >
             Get Started
           </Link>
@@ -93,7 +93,7 @@ export default function Navbar() {
                 key={link.href}
                 href={link.href}
                 className={`block whitespace-nowrap border-b border-slate-100 py-3.5 text-sm font-medium transition-colors ${
-                  active ? "text-cyan-600" : "text-slate-700 hover:text-slate-900"
+                  active ? "text-green-600" : "text-slate-700 hover:text-slate-900"
                 }`}
               >
                 {link.label}
@@ -102,7 +102,7 @@ export default function Navbar() {
           })}
           <Link
             href="/get-started"
-            className="mt-5 block rounded-full bg-cyan-600 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-sm"
+            className="mt-5 block rounded-full bg-green-600 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-sm"
           >
             Get Started
           </Link>

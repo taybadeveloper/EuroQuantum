@@ -151,7 +151,7 @@ export default function TermsPage() {
           Questions about these Terms &amp; Conditions? Contact us at{" "}
           <a
             href="mailto:legal@euroquantum-au.com"
-            className="text-cyan-600 transition-colors hover:text-cyan-700"
+            className="text-green-600 transition-colors hover:text-green-700"
           >
             legal@euroquantum-au.com
           </a>{" "}

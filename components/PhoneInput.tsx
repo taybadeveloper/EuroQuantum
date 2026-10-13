@@ -335,14 +335,14 @@ export default function PhoneInput({
 
   return (
     <div ref={ref} className="relative">
-      <div className="flex overflow-hidden rounded-xl border border-slate-200 bg-white transition focus-within:border-cyan-500/60 focus-within:ring-2 focus-within:ring-cyan-500/20">
+      <div className="flex overflow-hidden rounded-xl border border-slate-200 bg-white transition focus-within:border-green-500/60 focus-within:ring-2 focus-within:ring-green-500/20">
         <button
           type="button"
           onClick={() => setOpen(!open)}
           aria-haspopup="listbox"
           aria-expanded={open}
           aria-label={`Country code ${country.code}`}
-          className="flex shrink-0 items-center gap-1.5 border-r border-slate-200 px-3.5 py-3 text-sm text-slate-700 transition-colors hover:bg-sky-50"
+          className="flex shrink-0 items-center gap-1.5 border-r border-slate-200 px-3.5 py-3 text-sm text-slate-700 transition-colors hover:bg-stone-50"
         >
           <Flag country={country} />
           <span className="font-medium tabular-nums">{country.code}</span>
@@ -400,14 +400,14 @@ export default function PhoneInput({
                     setOpen(false);
                   }}
                   className={`flex w-full items-center gap-2.5 rounded-lg px-3 py-2.5 text-left text-sm transition-colors ${
-                    c.name === country.name ? "bg-sky-50" : "hover:bg-slate-50"
+                    c.name === country.name ? "bg-stone-50" : "hover:bg-slate-50"
                   }`}
                 >
                   <Flag country={c} />
                   <span className="flex-1 text-slate-700">{c.name}</span>
                   <span className="tabular-nums text-slate-500">{c.code}</span>
                   {c.name === country.name && (
-                    <IconCheck className="h-3.5 w-3.5 shrink-0 text-cyan-600" />
+                    <IconCheck className="h-3.5 w-3.5 shrink-0 text-green-600" />
                   )}
                 </button>
               ))

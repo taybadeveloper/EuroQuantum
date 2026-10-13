@@ -40,12 +40,12 @@ export default function ServicesPage() {
     <>
       {/* ---------- Page hero ---------- */}
       <section className="relative overflow-hidden border-b border-slate-300 pb-16 pt-40">
-        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-cyan-500/[0.12] blur-[120px]" />
-        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-violet-600/[0.13] blur-[120px]" />
+        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-green-500/[0.12] blur-[120px]" />
+        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-green-500/[0.13] blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6 text-center">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
-              <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
               Our Services
             </span>
           </Reveal>
@@ -76,7 +76,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ---------- Process ---------- */}
-      <section className="border-t border-slate-200 bg-sky-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-24">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -86,11 +86,11 @@ export default function ServicesPage() {
             />
           </Reveal>
           <div className="relative mt-14 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
-            <div className="absolute left-[12.5%] right-[12.5%] top-7 hidden h-px bg-cyan-500/40 lg:block" />
+            <div className="absolute left-[12.5%] right-[12.5%] top-7 hidden h-px bg-green-500/40 lg:block" />
             {process.map((step, i) => (
               <Reveal key={step.number} delay={i * 110}>
                 <div className="relative text-center">
-                  <span className="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-cyan-600 font-display text-lg font-bold text-white shadow-md">
+                  <span className="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-green-600 font-display text-lg font-bold text-white shadow-md">
                     {step.number}
                   </span>
                   <h3 className="mt-5 font-display text-lg font-semibold text-slate-900">

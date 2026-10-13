@@ -41,12 +41,12 @@ export default function ContactPage() {
     <>
       {/* ---------- Page hero ---------- */}
       <section className="relative overflow-hidden border-b border-slate-300 pb-16 pt-40">
-        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-cyan-500/[0.12] blur-[120px]" />
-        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-violet-600/[0.13] blur-[120px]" />
+        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-green-500/[0.12] blur-[120px]" />
+        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-green-500/[0.13] blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6 text-center">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
-              <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
               Contact Us
             </span>
           </Reveal>
@@ -71,8 +71,8 @@ export default function ContactPage() {
           <div className="space-y-5 lg:col-span-2">
             {contactInfo.map((item, i) => (
               <Reveal key={item.label} delay={i * 90}>
-                <div className="group flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:border-cyan-500/50 hover:bg-sky-50">
-                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10">
+                <div className="group flex items-start gap-4 rounded-2xl border border-slate-200 bg-white p-6 transition-all duration-300 hover:border-green-500/50 hover:bg-stone-50">
+                  <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-green-500/15 text-green-600 ring-1 ring-slate-900/10">
                     {item.icon}
                   </span>
                   <div>
@@ -89,12 +89,12 @@ export default function ContactPage() {
             ))}
 
             <Reveal delay={380}>
-              <div className="flex items-start gap-4 rounded-2xl border border-cyan-500/30 bg-cyan-500/[0.08] p-6">
-                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-cyan-500/25 text-cyan-600 ring-1 ring-cyan-500/40">
+              <div className="flex items-start gap-4 rounded-2xl border border-green-500/30 bg-green-500/[0.08] p-6">
+                <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-green-500/25 text-green-600 ring-1 ring-green-500/40">
                   <IconHeadset className="h-5 w-5" />
                 </span>
                 <div>
-                  <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-cyan-600">
+                  <h3 className="text-xs font-semibold uppercase tracking-[0.16em] text-green-600">
                     Fast Response
                   </h3>
                   <p className="mt-1.5 text-sm leading-relaxed text-slate-700">

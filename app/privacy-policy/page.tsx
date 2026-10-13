@@ -132,7 +132,7 @@ export default function PrivacyPolicyPage() {
           how we handle your information, please contact our Privacy Officer at{" "}
           <a
             href="mailto:privacy@euroquantum-au.com"
-            className="text-cyan-600 transition-colors hover:text-cyan-700"
+            className="text-green-600 transition-colors hover:text-green-700"
           >
             privacy@euroquantum-au.com
           </a>{" "}

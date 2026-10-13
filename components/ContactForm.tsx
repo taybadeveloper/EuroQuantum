@@ -4,7 +4,7 @@ import { useState, type FormEvent } from "react";
 import { IconCheck } from "./icons";
 
 const inputClasses =
-  "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-500 outline-none transition focus:border-cyan-500/60 focus:bg-sky-50 focus:ring-2 focus:ring-cyan-500/20";
+  "w-full rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm text-slate-900 placeholder:text-slate-500 outline-none transition focus:border-green-500/60 focus:bg-stone-50 focus:ring-2 focus:ring-green-500/20";
 
 const services = [
   "Forex Trading",
@@ -51,8 +51,8 @@ export default function ContactForm() {
 
   if (status === "sent") {
     return (
-      <div className="flex h-full flex-col items-center justify-center rounded-2xl border border-emerald-400/20 bg-emerald-400/[0.05] p-10 text-center">
-        <span className="grid h-16 w-16 place-items-center rounded-full bg-emerald-400/20 text-emerald-600 ring-1 ring-emerald-400/30">
+      <div className="flex h-full flex-col items-center justify-center rounded-2xl border border-green-400/20 bg-green-400/[0.05] p-10 text-center">
+        <span className="grid h-16 w-16 place-items-center rounded-full bg-green-500/20 text-green-600 ring-1 ring-green-500/30">
           <IconCheck className="h-8 w-8" />
         </span>
         <h3 className="mt-6 font-display text-2xl font-bold text-slate-900">
@@ -68,7 +68,7 @@ export default function ContactForm() {
             setStatus("idle");
             setForm({ name: "", email: "", phone: "", service: services[0], message: "" });
           }}
-          className="mt-8 text-sm font-semibold text-cyan-600 transition-colors hover:text-cyan-700"
+          className="mt-8 text-sm font-semibold text-green-600 transition-colors hover:text-green-700"
         >
           Send another message
         </button>
@@ -85,7 +85,7 @@ export default function ContactForm() {
       <div className="grid gap-5 sm:grid-cols-2">
         <div>
           <label htmlFor="name" className="mb-2 block text-sm font-medium text-slate-700">
-            Full Name <span className="text-cyan-600">*</span>
+            Full Name <span className="text-green-600">*</span>
           </label>
           <input
             id="name"
@@ -98,7 +98,7 @@ export default function ContactForm() {
         </div>
         <div>
           <label htmlFor="email" className="mb-2 block text-sm font-medium text-slate-700">
-            Email Address <span className="text-cyan-600">*</span>
+            Email Address <span className="text-green-600">*</span>
           </label>
           <input
             id="email"
@@ -146,7 +146,7 @@ export default function ContactForm() {
 
       <div className="mt-5">
         <label htmlFor="message" className="mb-2 block text-sm font-medium text-slate-700">
-          Message <span className="text-cyan-600">*</span>
+          Message <span className="text-green-600">*</span>
         </label>
         <textarea
           id="message"
@@ -167,7 +167,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="mt-6 w-full rounded-full bg-cyan-600 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:px-10"
+        className="mt-6 w-full rounded-full bg-green-600 px-6 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto sm:px-10"
       >
         {status === "sending" ? "Sending..." : "Send Message"}
       </button>

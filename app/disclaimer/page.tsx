@@ -101,7 +101,7 @@ export default function DisclaimerPage() {
           If you have questions about this disclaimer, contact us at{" "}
           <a
             href="mailto:support@euroquantum-au.com"
-            className="text-cyan-600 transition-colors hover:text-cyan-700"
+            className="text-green-600 transition-colors hover:text-green-700"
           >
             support@euroquantum-au.com
           </a>{" "}

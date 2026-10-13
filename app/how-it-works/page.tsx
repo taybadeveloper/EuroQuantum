@@ -75,12 +75,12 @@ export default function HowItWorksPage() {
     <>
       {/* ---------- Page hero ---------- */}
       <section className="relative overflow-hidden border-b border-slate-300 pb-16 pt-40">
-        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-cyan-500/[0.12] blur-[120px]" />
-        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-violet-600/[0.13] blur-[120px]" />
+        <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-green-500/[0.12] blur-[120px]" />
+        <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-green-500/[0.13] blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6 text-center">
           <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-cyan-500/30 bg-cyan-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-cyan-600">
-              <span className="h-1.5 w-1.5 rounded-full bg-cyan-500" />
+            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-green-500/[0.08] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
+              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
               How It Works
             </span>
           </Reveal>
@@ -99,7 +99,7 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ---------- Steps ---------- */}
-      <section className="border-t border-slate-200 bg-sky-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-24">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -110,8 +110,8 @@ export default function HowItWorksPage() {
           <div className="mt-14 grid gap-8 lg:grid-cols-3">
             {steps.map((step, i) => (
               <Reveal key={step.number} delay={i * 120} className="h-full">
-                <div className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:border-cyan-500/50 hover:bg-sky-50">
-                  <span className="grid h-14 w-14 place-items-center rounded-2xl bg-cyan-600 font-display text-lg font-bold text-white shadow-md">
+                <div className="flex h-full flex-col rounded-2xl border border-slate-200 bg-white p-8 transition-all duration-300 hover:border-green-500/50 hover:bg-stone-50">
+                  <span className="grid h-14 w-14 place-items-center rounded-2xl bg-green-600 font-display text-lg font-bold text-white shadow-md">
                     {step.number}
                   </span>
                   <h3 className="mt-6 font-display text-xl font-semibold text-slate-900">
@@ -123,8 +123,8 @@ export default function HowItWorksPage() {
                   <ul className="mt-6 space-y-3">
                     {step.points.map((point) => (
                       <li key={point} className="flex items-start gap-3 text-sm text-slate-700">
-                        <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-cyan-500/25 ring-1 ring-cyan-500/40">
-                          <IconCheck className="h-3 w-3 text-cyan-600" />
+                        <span className="mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full bg-green-500/25 ring-1 ring-green-500/40">
+                          <IconCheck className="h-3 w-3 text-green-600" />
                         </span>
                         {point}
                       </li>
@@ -149,8 +149,8 @@ export default function HowItWorksPage() {
           <div className="mt-14 grid gap-6 md:grid-cols-3">
             {goodToKnow.map((item, i) => (
               <Reveal key={item.title} delay={i * 100} className="h-full">
-                <div className="h-full rounded-2xl border border-slate-200 bg-white p-7 text-center transition-all duration-300 hover:border-cyan-500/50 hover:bg-sky-50">
-                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-600 ring-1 ring-slate-900/10">
+                <div className="h-full rounded-2xl border border-slate-200 bg-white p-7 text-center transition-all duration-300 hover:border-green-500/50 hover:bg-stone-50">
+                  <span className="inline-flex h-11 w-11 items-center justify-center rounded-xl bg-green-500/15 text-green-600 ring-1 ring-slate-900/10">
                     {item.icon}
                   </span>
                   <h3 className="mt-4 font-display text-lg font-semibold text-slate-900">
@@ -167,13 +167,13 @@ export default function HowItWorksPage() {
       </section>
 
       {/* ---------- CTA ---------- */}
-      <section className="border-t border-slate-200 bg-sky-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-24">
         <div className="mx-auto max-w-5xl px-6">
           <Reveal>
-            <div className="rounded-3xl bg-cyan-500/40 p-px">
+            <div className="rounded-3xl bg-green-500/40 p-px">
               <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-16 text-center md:px-16">
-                <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-cyan-500/[0.12] blur-[100px]" />
-                <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-violet-600/[0.14] blur-[100px]" />
+                <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-green-500/[0.12] blur-[100px]" />
+                <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-green-500/[0.14] blur-[100px]" />
                 <div className="relative">
                   <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
                     Ready for <span className="text-gradient">Step 1?</span>
@@ -185,7 +185,7 @@ export default function HowItWorksPage() {
                   <div className="mt-9">
                     <Link
                       href="/get-started"
-                      className="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
+                      className="inline-flex items-center gap-2 rounded-full bg-green-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
                     >
                       Sign Up Free
                       <IconArrowRight className="h-4 w-4" />

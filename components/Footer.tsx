@@ -16,7 +16,7 @@ const quickLinks = [
 
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-300 bg-sky-50">
+    <footer className="border-t border-slate-300 bg-stone-50">
       <div className="mx-auto max-w-7xl px-6 py-16">
         <div className="grid gap-12 text-center md:grid-cols-3 md:text-left">
           <div className="flex flex-col items-center md:items-start">
@@ -37,7 +37,7 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     href={link.href}
-                    className="text-sm text-slate-500 transition-colors hover:text-cyan-600"
+                    className="text-sm text-slate-500 transition-colors hover:text-green-600"
                   >
                     {link.label}
                   </Link>
@@ -52,25 +52,25 @@ export default function Footer() {
             </h3>
             <ul className="mt-5 space-y-3 text-sm text-slate-500">
               <li className="flex items-start justify-center gap-2.5 md:justify-start">
-                <IconMail className="mt-0.5 h-4 w-4 shrink-0 text-cyan-600" />
+                <IconMail className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
                 <a
                   href="mailto:support@euroquantum-au.com"
-                  className="transition-colors hover:text-cyan-600"
+                  className="transition-colors hover:text-green-600"
                 >
                   support@euroquantum-au.com
                 </a>
               </li>
               <li className="flex items-start justify-center gap-2.5 md:justify-start">
-                <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-cyan-600" />
+                <IconPhone className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
                 <a
                   href="tel:+61280000000"
-                  className="transition-colors hover:text-cyan-600"
+                  className="transition-colors hover:text-green-600"
                 >
                   +61 2 8000 0000
                 </a>
               </li>
               <li className="flex items-start justify-center gap-2.5 md:justify-start">
-                <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-cyan-600" />
+                <IconMapPin className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
                 Sydney, NSW 2000, Australia
               </li>
             </ul>
@@ -78,7 +78,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 rounded-2xl border border-slate-200 bg-white p-6 text-center md:text-left">
-          <h4 className="text-xs font-semibold uppercase tracking-[0.16em] text-amber-600">
+          <h4 className="text-xs font-semibold uppercase tracking-[0.16em] text-green-600">
             Risk Warning
           </h4>
           <p className="mt-3 text-xs leading-relaxed text-slate-500">
