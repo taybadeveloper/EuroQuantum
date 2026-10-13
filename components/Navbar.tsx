@@ -43,7 +43,7 @@ export default function Navbar() {
       <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6">
         <Logo />
 
-        <div className="hidden items-center gap-6 lg:flex">
+        <div className="hidden items-center gap-6 md:flex">
           {links.map((link) => {
             const active = pathname === link.href;
             return (
@@ -60,7 +60,7 @@ export default function Navbar() {
           })}
           <Link
             href="/get-started"
-            className="rounded-full bg-cyan-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
+            className="hidden rounded-full bg-cyan-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md lg:inline-flex"
           >
             Get Started
           </Link>
@@ -71,14 +71,14 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
           aria-expanded={open}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 shadow-sm transition-colors hover:text-slate-900 lg:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 shadow-sm transition-colors hover:text-slate-900 md:hidden"
         >
           {open ? <IconX className="h-5 w-5" /> : <IconMenu className="h-5 w-5" />}
         </button>
       </nav>
 
       {open && (
-        <div className="border-t border-slate-200 bg-white px-6 pb-6 pt-3 shadow-lg lg:hidden">
+        <div className="border-t border-slate-200 bg-white px-6 pb-6 pt-3 shadow-lg md:hidden">
           {links.map((link) => {
             const active = pathname === link.href;
             return (
