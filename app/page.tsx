@@ -660,7 +660,7 @@ export default function Home() {
                   </p>
                   <div className="mt-9">
                     <Link
-                      href="#signup"
+                      href="/get-started"
                       className="inline-flex items-center gap-2 rounded-full bg-cyan-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
                     >
                       Create My Free Account
