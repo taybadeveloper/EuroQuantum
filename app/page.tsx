@@ -25,10 +25,10 @@ import {
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Striluxon AI | AI Trading Platform in Australia from AU$250",
+    absolute: "EuroQuantum | AI Trading Platform in Australia from AU$250",
   },
   description:
-    "Striluxon AI is a browser-based AI trading platform for Australians. Trade crypto, forex, stocks and commodities with AI market insights. Start from AU$250.",
+    "EuroQuantum is a browser-based AI trading platform for Australians. Trade crypto, forex, stocks and commodities with AI market insights. Start from AU$250.",
 };
 
 const trustItems = [
@@ -191,24 +191,24 @@ const safetyPoints = [
 
 const faqs = [
   {
-    q: "Is Striluxon AI available in Australia?",
-    a: "Yes. Striluxon AI is built for Australian users and works in every state and territory.",
+    q: "Is EuroQuantum available in Australia?",
+    a: "Yes. EuroQuantum is built for Australian users and works in every state and territory.",
   },
   {
     q: "What is the minimum deposit?",
     a: "You can start trading from AU$250.",
   },
   {
-    q: "Is there a Striluxon app?",
-    a: "No download is needed. Striluxon AI runs in your web browser on any phone, tablet or computer.",
+    q: "Is there a EuroQuantum app?",
+    a: "No download is needed. EuroQuantum runs in your web browser on any phone, tablet or computer.",
   },
   {
     q: "Do I need trading experience?",
     a: "No. Signals come with simple explanations, and an account manager can help you get started.",
   },
   {
-    q: "Is Striluxon AI legit?",
-    a: "Striluxon AI is a real platform with secure sign-up, clear terms and a full risk disclosure. As with any trading, your capital is at risk.",
+    q: "Is EuroQuantum legit?",
+    a: "EuroQuantum is a real platform with secure sign-up, clear terms and a full risk disclosure. As with any trading, your capital is at risk.",
   },
   {
     q: "How does the AI choose trades?",
@@ -311,19 +311,19 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- What Is Striluxon AI ---------- */}
+      {/* ---------- What Is EuroQuantum ---------- */}
       <section className="relative overflow-hidden py-24">
         <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-violet-600/[0.07] blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
               eyebrow="The Platform"
-              title="What Is Striluxon AI?"
+              title="What Is EuroQuantum?"
             />
           </Reveal>
           <Reveal delay={150}>
             <p className="mx-auto mt-8 max-w-3xl text-center text-lg leading-relaxed text-slate-600">
-              Striluxon AI is an online trading platform built for people in
+              EuroQuantum is an online trading platform built for people in
               Australia. It uses artificial intelligence to scan crypto, forex,
               stock and commodity markets, then shows you trade ideas based on
               real price data. You choose what to act on. There is no app to
@@ -402,7 +402,7 @@ export default function Home() {
             <SectionHeading
               eyebrow="Markets"
               title="One Platform, Four Markets"
-              subtitle="Whatever you want to follow, Striluxon AI keeps an eye on it for you."
+              subtitle="Whatever you want to follow, EuroQuantum keeps an eye on it for you."
             />
           </Reveal>
           <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -456,7 +456,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- Why Australians Choose Striluxon ---------- */}
+      {/* ---------- Why Australians Choose EuroQuantum ---------- */}
       <section className="py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <Reveal>
@@ -469,7 +469,7 @@ export default function Home() {
                 Built Around How <span className="text-gradient">Australians Trade</span>
               </h2>
               <p className="mt-5 leading-relaxed text-slate-600">
-                Most trading tools are made for US or European hours. Striluxon
+                Most trading tools are made for US or European hours. EuroQuantum
                 AI is set up for life in Australia.
               </p>
               <p className="mt-5 leading-relaxed text-slate-600">
@@ -520,7 +520,7 @@ export default function Home() {
                 <div className="bg-cyan-500/[0.07] px-5 py-5 text-center">
                   <p className="text-gradient flex items-center justify-center gap-1.5 text-xs font-bold uppercase tracking-[0.12em]">
                     <IconSparkles className="h-3.5 w-3.5" />
-                    Striluxon AI
+                    EuroQuantum
                   </p>
                 </div>
               </div>
@@ -557,7 +557,7 @@ export default function Home() {
                 Trust &amp; Safety
               </span>
               <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
-                Is Striluxon AI <span className="text-gradient">Safe to Use?</span>
+                Is EuroQuantum <span className="text-gradient">Safe to Use?</span>
               </h2>
               <p className="mt-5 leading-relaxed text-slate-600">
                 We know trust matters before you sign up. Here is how we
@@ -607,7 +607,7 @@ export default function Home() {
                   Honesty First
                 </h3>
                 <p className="mt-4 leading-relaxed text-slate-600">
-                  Striluxon AI is a genuine AI trading platform in Australia
+                  EuroQuantum is a genuine AI trading platform in Australia
                   that puts honesty first. Trading always carries risk, and we
                   will never promise guaranteed profits.
                 </p>
@@ -655,7 +655,7 @@ export default function Home() {
                     <span className="text-gradient">AI Trading Platform</span> in Australia?
                   </h2>
                   <p className="mx-auto mt-5 max-w-xl leading-relaxed text-slate-600">
-                    Join Striluxon AI today. Sign up for free, start from
+                    Join EuroQuantum today. Sign up for free, start from
                     AU$250, and let AI do the heavy market research for you.
                   </p>
                   <div className="mt-9">

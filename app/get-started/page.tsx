@@ -7,7 +7,7 @@ import { IconCheck } from "@/components/icons";
 export const metadata: Metadata = {
   title: "Get Started",
   description:
-    "Create your free Striluxon AI account in under two minutes. Start trading from AU$250 with AI market insights.",
+    "Create your free EuroQuantum account in under two minutes. Start trading from AU$250 with AI market insights.",
 };
 
 const steps = [
@@ -55,7 +55,7 @@ export default function GetStartedPage() {
             </Reveal>
             <Reveal delay={200}>
               <p className="hero-paragraph mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
-                Join Striluxon AI and let the AI do the heavy market research
+                Join EuroQuantum and let the AI do the heavy market research
                 for you. Sign up free, fund from AU$250, and trade crypto,
                 forex, stocks and commodities with confidence.
               </p>
