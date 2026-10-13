@@ -9,11 +9,11 @@ import { IconMenu, IconX } from "./icons";
 const links = [
   { href: "/", label: "Home" },
   { href: "/about", label: "About" },
+  { href: "/contact", label: "Contact" },
   { href: "/features", label: "Features" },
   { href: "/how-it-works", label: "How It Works" },
   { href: "/reviews", label: "Reviews" },
   { href: "/faqs", label: "FAQs" },
-  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
