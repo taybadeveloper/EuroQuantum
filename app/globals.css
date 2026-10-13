@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+}
+
+:root {
+  --background: #f0f9ff;
+  --foreground: #0f172a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
+  overflow-x: hidden;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.25);
+  color: #0f172a;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f9ff;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* ---------- Gradient text ---------- */
+.text-gradient {
+  background: linear-gradient(92deg, #0891b2 0%, #6366f1 50%, #7c3aed 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Marquee ticker ---------- */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 38s linear infinite;
+}
+
+/* ---------- Scroll reveal ---------- */
+.reveal {
+  opacity: 0;
+  transform: translateY(26px);
+  transition:
+    opacity 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+    transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
+
+/* ---------- Hero text alignment ----------
+   Heading + Paragraph + points:
+     < tablets + mobile (touch):            CENTER
+     Desktop (mouse, >= 1024px viewport):   LEFT
+   min-device-width rules: browser zoom se unaffected — desktop ki
+   device-width (e.g. 1600) 1536+ rehti hai chahe zoom kitna bhi ho,
+   is liye zoom hone par bhi desktop pe LEFT rehta hai.
+--------------------------------------------------------------------- */
+.hero-heading {
+  text-align: center;
+}
+
+.hero-paragraph {
+  text-align: center;
+}
+@media (min-width: 96rem) {
+  .hero-paragraph {
+    text-align: left;
+  }
+}
+
+.hero-points li {
+  justify-content: center;
+}
+@media (min-width: 96rem) {
+  .hero-points li {
+    justify-content: flex-start;
+  }
+}
+
+@media (min-device-width: 96rem) {
+  .hero-heading,
+  .hero-paragraph {
+    text-align: left;
+  }
+  .hero-points li {
+    justify-content: flex-start;
+  }
+}
+
+/* Desktop (mouse + wide window): LEFT — pointer query device type pehchanta hai,
+   is liye zoom/scaling se viewport chhota ho tab bhi kaam karta hai.
+   Touch devices (tablets/mobile): is rule se bahar — CENTER rehta hai. */
+@media (pointer: fine) and (hover: hover) and (min-width: 64rem) {
+  .hero-heading,
+  .hero-paragraph {
+    text-align: left;
+  }
+  .hero-points li {
+    justify-content: flex-start;
+  }
+}
