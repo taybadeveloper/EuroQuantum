@@ -4,6 +4,12 @@ const nextConfig: NextConfig = {
   /* config options here */
   cacheComponents: true,
   partialPrefetching: true,
+  experimental: {
+    // Inline CSS as <style> tags instead of render-blocking <link> requests.
+    // Fixes the PageSpeed "Render-blocking requests" flag (LCP/FCP). Small
+    // atomic CSS (Tailwind) is the ideal case for this per Next.js docs.
+    inlineCss: true,
+  },
   turbopack: {
     rules: {
       "*.css": {
