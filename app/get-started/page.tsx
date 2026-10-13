@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Reveal from "@/components/Reveal";
-import SectionHeading from "@/components/SectionHeading";
 import SignupForm from "@/components/SignupForm";
 import { IconCheck } from "@/components/icons";
 
@@ -9,27 +8,6 @@ export const metadata: Metadata = {
   description:
     "Create your free EuroQuantum account in under two minutes. Start trading from AU$250 with AI market insights.",
 };
-
-const steps = [
-  {
-    number: "01",
-    title: "Sign Up Free",
-    description:
-      "Fill in the short form with your name, email and phone number. It takes less than two minutes.",
-  },
-  {
-    number: "02",
-    title: "Fund Your Account",
-    description:
-      "Add from AU$250 using a payment method that suits you. Your account manager can walk you through it.",
-  },
-  {
-    number: "03",
-    title: "Trade with AI Support",
-    description:
-      "The AI watches the markets and flags opportunities. You review them, set your limits, and decide when to trade.",
-  },
-];
 
 export default function GetStartedPage() {
   return (
@@ -81,36 +59,6 @@ export default function GetStartedPage() {
           <Reveal delay={250}>
             <SignupForm />
           </Reveal>
-        </div>
-      </section>
-
-      {/* ---------- Steps ---------- */}
-      <section className="border-t border-slate-200 bg-sky-50 py-20">
-        <div className="mx-auto max-w-7xl px-6">
-          <Reveal>
-            <SectionHeading
-              eyebrow="How It Works"
-              title="Three Simple Steps After Sign-Up"
-            />
-          </Reveal>
-          <div className="relative mt-12 grid gap-10 md:grid-cols-3">
-            <div className="absolute left-[16.6%] right-[16.6%] top-7 hidden h-px bg-cyan-500/40 md:block" />
-            {steps.map((step, i) => (
-              <Reveal key={step.number} delay={i * 120}>
-                <div className="relative text-center">
-                  <span className="relative z-10 mx-auto grid h-14 w-14 place-items-center rounded-2xl bg-cyan-600 font-display text-lg font-bold text-white shadow-md">
-                    {step.number}
-                  </span>
-                  <h3 className="mt-5 font-display text-xl font-semibold text-slate-900">
-                    {step.title}
-                  </h3>
-                  <p className="mx-auto mt-3 max-w-xs text-sm leading-relaxed text-slate-600">
-                    {step.description}
-                  </p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
         </div>
       </section>
     </>
