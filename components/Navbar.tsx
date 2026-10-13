@@ -11,7 +11,7 @@ const links = [
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
   { href: "/features", label: "Features" },
-  { href: "/how-it-works", label: "How It Works" },
+  { href: "/how-it-works", label: "How It Works", shortLabel: "Works" },
   { href: "/reviews", label: "Reviews" },
   { href: "/faqs", label: "FAQs" },
 ];
@@ -54,7 +54,14 @@ export default function Navbar() {
                   active ? "text-slate-900" : "text-slate-600 hover:text-slate-900"
                 }`}
               >
-                {link.label}
+                {link.shortLabel ? (
+                  <>
+                    <span className="hidden lg:inline">{link.label}</span>
+                    <span className="lg:hidden">{link.shortLabel}</span>
+                  </>
+                ) : (
+                  link.label
+                )}
               </Link>
             );
           })}
