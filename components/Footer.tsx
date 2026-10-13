@@ -21,7 +21,7 @@ export default function Footer() {
         <div className="grid gap-12 text-center md:grid-cols-3 md:text-left">
           <div className="flex flex-col items-center md:items-start">
             <Logo />
-            <p className="mx-auto mt-5 max-w-xs text-sm leading-relaxed text-slate-500 md:mx-0">
+            <p className="mx-auto mt-5 max-w-sm text-sm leading-relaxed text-slate-500 md:mx-0 md:max-w-xs">
               Australia&apos;s advanced trading and investment platform —
               institutional-grade technology, deep liquidity and expert insights
               for every trader.
