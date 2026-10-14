@@ -104,7 +104,7 @@ export default function AboutPage() {
 
       {/* ---------- Story ---------- */}
       <section className="mt-14 pb-20">
-        <div className="mx-auto grid max-w-7xl items-center gap-16 px-6">
+        <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <Reveal>
             <div className="text-center lg:text-left">
               <h2 className="font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
