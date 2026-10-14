@@ -27,7 +27,7 @@ export default function GetStartedPage() {
               </h1>
             </Reveal>
             <Reveal delay={200}>
-              <p className="hero-paragraph mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
+              <p className="hero-paragraph mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
                 Join EuroQuantum and let the AI do the heavy market research
                 for you. Sign up free, fund from AU$250, and trade crypto,
                 forex, stocks and commodities with confidence.
@@ -51,7 +51,7 @@ export default function GetStartedPage() {
             </Reveal>
           </div>
 
-          <Reveal delay={250}>
+          <Reveal delay={250} className="mx-auto w-full max-w-md">
             <SignupForm />
           </Reveal>
         </div>

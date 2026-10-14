@@ -250,7 +250,7 @@ export default function Home() {
               </h1>
             </Reveal>
             <Reveal delay={200}>
-              <p className="hero-paragraph mt-6 max-w-xl text-lg leading-relaxed text-slate-600">
+              <p className="hero-paragraph mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
                 A straightforward AI trading platform for Australians. It
                 studies the markets, highlights opportunities, and leaves the
                 final call to you.
@@ -275,7 +275,7 @@ export default function Home() {
           </div>
 
           <Reveal delay={250}>
-            <div id="signup" className="relative scroll-mt-32">
+            <div id="signup" className="relative mx-auto w-full max-w-md scroll-mt-32">
               <SignupForm />
             </div>
           </Reveal>
