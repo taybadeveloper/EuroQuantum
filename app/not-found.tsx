@@ -4,7 +4,7 @@ import { IconArrowRight, IconHome } from "@/components/icons";
 
 export default function NotFound() {
   return (
-    <section className="relative flex min-h-[70vh] items-center overflow-hidden pb-20 pt-40">
+    <section className="relative flex min-h-[70vh] items-center overflow-hidden pb-20 pt-28">
       <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
       <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
 
