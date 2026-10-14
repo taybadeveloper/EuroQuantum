@@ -256,6 +256,17 @@ export default function Home() {
                 final call to you.
               </p>
             </Reveal>
+            <Reveal delay={300}>
+              <div className="mt-8">
+                <Link
+                  href="/get-started"
+                  className="inline-flex items-center gap-2 rounded-full bg-green-600 px-9 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
+                >
+                  Get Started
+                  <IconArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
+            </Reveal>
           </div>
 
           <Reveal delay={250}>

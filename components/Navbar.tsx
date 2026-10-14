@@ -65,12 +65,6 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <Link
-            href="/get-started"
-            className="hidden rounded-full bg-green-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md lg:inline-flex"
-          >
-            Get Started
-          </Link>
         </div>
 
         <button
@@ -100,12 +94,6 @@ export default function Navbar() {
               </Link>
             );
           })}
-          <Link
-            href="/get-started"
-            className="mt-5 block rounded-full bg-green-600 px-5 py-2.5 text-center text-sm font-semibold text-white shadow-sm"
-          >
-            Get Started
-          </Link>
         </div>
       )}
     </header>
