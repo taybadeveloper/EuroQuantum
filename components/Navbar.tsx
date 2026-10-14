@@ -43,7 +43,7 @@ export default function Navbar() {
       <nav className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6">
         <Logo />
 
-        <div className="hidden items-center gap-4 lg:flex lg:gap-6">
+        <div className="hidden items-center gap-4 md:flex lg:gap-6">
           {links.map((link) => {
             const active = pathname === link.href;
             return (
@@ -72,14 +72,14 @@ export default function Navbar() {
           onClick={() => setOpen(!open)}
           aria-label="Toggle menu"
           aria-expanded={open}
-          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 shadow-sm transition-colors hover:text-slate-900 lg:hidden"
+          className="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-slate-200 bg-white text-slate-700 shadow-sm transition-colors hover:text-slate-900 md:hidden"
         >
           {open ? <IconX className="h-5 w-5" /> : <IconMenu className="h-5 w-5" />}
         </button>
       </nav>
 
       {open && (
-        <div className="max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-t border-slate-200 bg-white px-6 pb-6 pt-3 shadow-lg lg:hidden">
+        <div className="max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-t border-slate-200 bg-white px-6 pb-6 pt-3 shadow-lg md:hidden">
           {links.map((link) => {
             const active = pathname === link.href;
             return (
