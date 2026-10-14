@@ -561,9 +561,9 @@ export default function Home() {
 
       {/* ---------- Safe & Legit ---------- */}
       <section className="py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-16 px-6">
+        <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 md:grid-cols-2">
           <Reveal>
-            <div className="text-center lg:text-left">
+            <div className="text-center md:text-left">
               <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
                 Is EuroQuantum <span className="text-gradient">Safe to Use?</span>
               </h2>
@@ -607,26 +607,39 @@ export default function Home() {
           </Reveal>
 
           <Reveal delay={150}>
-            <div className="rounded-2xl border border-slate-200 bg-white p-8 text-center shadow-lg shadow-slate-200/60 md:p-10">
-                <span className="mx-auto grid h-16 w-16 place-items-center rounded-full bg-green-500/20 text-green-600 ring-1 ring-green-500/40">
-                  <IconShield className="h-8 w-8" />
-                </span>
-                <h3 className="mt-6 font-display text-2xl font-bold text-slate-900">
-                  Honesty First
-                </h3>
-                <p className="mt-4 leading-relaxed text-slate-600">
-                  EuroQuantum is a genuine AI trading platform in Australia
-                  that puts honesty first. Trading always carries risk, and we
-                  will never promise guaranteed profits.
-                </p>
-                <Link
-                  href="#signup"
-                  className="mt-8 inline-flex items-center gap-2 rounded-full bg-green-600 px-8 py-3.5 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md"
-                >
-                  Open My Free Account
-                  <IconArrowRight className="h-4 w-4" />
-                </Link>
-              </div>
+            <div className="relative mx-auto w-full max-w-md overflow-hidden rounded-3xl bg-gradient-to-br from-green-50 via-white to-stone-50 p-10 shadow-lg shadow-slate-200/60 ring-1 ring-slate-200">
+              <div className="pointer-events-none absolute -right-16 -top-16 h-48 w-48 rounded-full bg-green-500/[0.08] blur-[60px]" />
+              <svg
+                viewBox="0 0 200 220"
+                className="relative mx-auto h-auto w-56"
+                role="img"
+                aria-label="EuroQuantum security shield"
+              >
+                <defs>
+                  <linearGradient id="shieldFill" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stopColor="#22c55e" stopOpacity="0.35" />
+                    <stop offset="1" stopColor="#22c55e" stopOpacity="0.08" />
+                  </linearGradient>
+                </defs>
+                <path
+                  d="M100 12 L178 42 V108 C178 162 143 194 100 210 C57 194 22 162 22 108 V42 Z"
+                  fill="url(#shieldFill)"
+                  stroke="#16a34a"
+                  strokeWidth="5"
+                />
+                <path
+                  d="M62 110 L90 138 L142 82"
+                  fill="none"
+                  stroke="#16a34a"
+                  strokeWidth="12"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <p className="relative mt-6 text-center text-sm font-semibold text-slate-700">
+                Bank-level encryption and identity protection on every trade
+              </p>
+            </div>
           </Reveal>
         </div>
       </section>
