@@ -243,7 +243,7 @@ export default function Home() {
         <div className="pointer-events-none absolute right-0 top-40 h-96 w-96 rounded-full bg-slate-500/[0.05] blur-[130px]" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
-          <div className="text-center">
+          <div className="text-center lg:text-left">
             <Reveal delay={100}>
               <h1 className="hero-heading mt-6 font-display text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl xl:text-6xl">
                 The AI Trading Platform <span className="text-gradient">Australia</span> Can Count On
@@ -263,7 +263,7 @@ export default function Home() {
                   "No app to download — runs in your browser",
                   "Start from AU$250",
                 ].map((item) => (
-                  <li key={item} className="flex items-center justify-center gap-3 text-sm text-slate-700">
+                  <li key={item} className="flex items-center justify-center gap-3 text-sm text-slate-700 lg:justify-start">
                     <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-green-500/25 ring-1 ring-green-500/40">
                       <IconCheck className="h-3 w-3 text-green-600" />
                     </span>

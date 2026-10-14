@@ -18,7 +18,7 @@ export default function GetStartedPage() {
         <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
-          <div className="text-center">
+          <div className="text-center lg:text-left">
             
             <Reveal delay={100}>
               <h1 className="hero-heading mt-6 font-display text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl">
@@ -40,7 +40,7 @@ export default function GetStartedPage() {
                   "Bank-level encryption keeps your details safe",
                   "Works in any browser — no app to download",
                 ].map((item) => (
-                  <li key={item} className="flex items-center justify-start gap-3 text-left text-sm text-slate-700 lg:justify-center lg:text-center">
+                  <li key={item} className="flex items-center justify-start gap-3 text-left text-sm text-slate-700">
                     <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-green-500/25 ring-1 ring-green-500/40">
                       <IconCheck className="h-3 w-3 text-green-600" />
                     </span>
