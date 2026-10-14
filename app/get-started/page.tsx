@@ -13,7 +13,7 @@ export default function GetStartedPage() {
   return (
     <>
       {/* ---------- Hero ---------- */}
-      <section className="relative overflow-hidden pb-16 pt-30">
+      <section className="relative overflow-hidden pb-20 pt-30">
         <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
         <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
 
@@ -21,7 +21,7 @@ export default function GetStartedPage() {
           <div className="text-center md:text-left">
             
             <Reveal delay={100}>
-              <h1 className="hero-heading mt-6 font-display text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl">
+              <h1 className="hero-heading mt-6 font-display text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl xl:text-6xl">
                 Your Free Account Is{" "}
                 <span className="text-gradient">Two Minutes Away</span>
               </h1>
@@ -33,27 +33,40 @@ export default function GetStartedPage() {
                 forex, stocks and commodities with confidence.
               </p>
             </Reveal>
-            <Reveal delay={300}>
-              <ul className="hero-points mt-9 space-y-3">
-                {[
-                  "Free sign-up — no deposit needed to start",
-                  "Bank-level encryption keeps your details safe",
-                  "Works in any browser — no app to download",
-                ].map((item) => (
-                  <li key={item} className="flex items-center justify-start gap-3 text-left text-sm text-slate-700">
-                    <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-green-500/25 ring-1 ring-green-500/40">
-                      <IconCheck className="h-3 w-3 text-green-600" />
-                    </span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
           </div>
 
           <Reveal delay={250} className="mx-auto w-full max-w-md">
             <SignupForm />
           </Reveal>
+        </div>
+      </section>
+
+      {/* ---------- Marquee points ---------- */}
+      <section className="border-y border-slate-200 bg-white py-4">
+        <div className="relative overflow-hidden">
+          <div className="flex w-max animate-marquee">
+            {[
+              "Free sign-up — no deposit needed to start",
+              "Bank-level encryption keeps your details safe",
+              "Works in any browser — no app to download",
+            ].concat([
+              "Free sign-up — no deposit needed to start",
+              "Bank-level encryption keeps your details safe",
+              "Works in any browser — no app to download",
+            ]).map((item, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-3 whitespace-nowrap px-8 text-sm text-slate-700"
+              >
+                <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-green-500/25 ring-1 ring-green-500/40">
+                  <IconCheck className="h-3 w-3 text-green-600" />
+                </span>
+                {item}
+              </div>
+            ))}
+          </div>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent" />
         </div>
       </section>
     </>
