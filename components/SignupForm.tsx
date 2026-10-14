@@ -60,6 +60,8 @@ export default function SignupForm() {
       phone: `${country.code}${digits}`,
       country: country.name,
       country_code: country.code,
+      offer_name: "EuroQuantum-Site",
+      offerName: "EuroQuantum-Site",
       first_name: form.firstName.trim(),
       last_name: form.lastName.trim(),
       firstname: form.firstName.trim(),
