@@ -476,7 +476,7 @@ export default function Home() {
       <section className="py-24">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6">
           <Reveal>
-            <div className="text-center lg:text-left">
+            <div className="mx-auto max-w-2xl text-center">
               <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
                 Built Around How <span className="text-gradient">Australians Trade</span>
               </h2>
