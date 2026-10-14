@@ -637,9 +637,6 @@ export default function Home() {
                   strokeLinejoin="round"
                 />
               </svg>
-              <p className="relative mt-6 text-center text-sm font-semibold text-slate-700">
-                Bank-level encryption and identity protection on every trade
-              </p>
             </div>
           </Reveal>
         </div>
