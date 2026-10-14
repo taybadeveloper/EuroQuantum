@@ -73,7 +73,7 @@ export default function ReviewsPage() {
       </section>
 
       {/* ---------- Rating summary ---------- */}
-      <section className="border-t border-slate-200 bg-stone-50 py-16">
+      <section className="border-t border-slate-200 bg-stone-50 py-10">
         <div className="mx-auto grid max-w-4xl gap-4 px-6 sm:grid-cols-3">
           {ratingSummary.map((stat, i) => (
             <Reveal key={stat.label} delay={i * 80}>
@@ -91,7 +91,7 @@ export default function ReviewsPage() {
       </section>
 
       {/* ---------- Review cards ---------- */}
-      <section className="py-24">
+      <section className="py-14">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading

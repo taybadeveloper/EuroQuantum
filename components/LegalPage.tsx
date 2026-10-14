@@ -42,7 +42,7 @@ export default function LegalPage({
       </section>
 
       {/* ---------- Content ---------- */}
-      <section className="mt-14 pb-24">
+      <section className="mt-14 pb-14">
         <div className="mx-auto max-w-5xl px-6">
           <Reveal>
             <div className="space-y-10">{children}</div>

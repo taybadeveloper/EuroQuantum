@@ -61,7 +61,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ---------- Services grid ---------- */}
-      <section className="mt-14 pb-24">
+      <section className="mt-14 pb-14">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {services.map((service, i) => (
@@ -72,7 +72,7 @@ export default function ServicesPage() {
       </section>
 
       {/* ---------- Process ---------- */}
-      <section className="border-t border-slate-200 bg-stone-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-14">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading

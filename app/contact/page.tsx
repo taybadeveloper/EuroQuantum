@@ -61,7 +61,7 @@ export default function ContactPage() {
       </section>
 
       {/* ---------- Contact content ---------- */}
-      <section className="mt-14 pb-24">
+      <section className="mt-14 pb-14">
         <div className="mx-auto grid max-w-7xl gap-10 px-6 lg:grid-cols-5">
           {/* Info cards */}
           <div className="space-y-5 lg:col-span-2">

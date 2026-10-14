@@ -166,7 +166,7 @@ export default function AboutPage() {
       </section>
 
       {/* ---------- Values ---------- */}
-      <section className="border-t border-slate-200 bg-stone-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-14">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -196,7 +196,7 @@ export default function AboutPage() {
       </section>
 
       {/* ---------- Milestones ---------- */}
-      <section className="py-24">
+      <section className="py-14">
         <div className="mx-auto max-w-4xl px-6">
           <Reveal>
             <SectionHeading

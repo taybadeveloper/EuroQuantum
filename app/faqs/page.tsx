@@ -95,7 +95,7 @@ export default function FaqsPage() {
       </section>
 
       {/* ---------- FAQ list ---------- */}
-      <section className="border-t border-slate-200 bg-stone-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-14">
         <div className="mx-auto max-w-3xl px-6">
           <script
             type="application/ld+json"

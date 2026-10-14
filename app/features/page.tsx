@@ -106,7 +106,7 @@ export default function FeaturesPage() {
       </section>
 
       {/* ---------- Features grid ---------- */}
-      <section className="border-t border-slate-200 bg-stone-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-14">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -137,7 +137,7 @@ export default function FeaturesPage() {
       </section>
 
       {/* ---------- Markets ---------- */}
-      <section className="py-24">
+      <section className="py-14">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -167,11 +167,11 @@ export default function FeaturesPage() {
       </section>
 
       {/* ---------- CTA ---------- */}
-      <section className="border-t border-slate-200 bg-stone-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-14">
         <div className="mx-auto max-w-5xl px-6">
           <Reveal>
             <div className="rounded-3xl bg-green-500/40 p-px">
-              <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-16 text-center md:px-16">
+              <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-10 text-center md:px-16">
                 <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-slate-500/[0.05] blur-[100px]" />
                 <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-slate-500/[0.05] blur-[100px]" />
                 <div className="relative">

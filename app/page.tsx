@@ -329,7 +329,7 @@ export default function Home() {
       </section>
 
       {/* ---------- What Is EuroQuantum ---------- */}
-      <section className="relative overflow-hidden py-24">
+      <section className="relative overflow-hidden py-14">
         <div className="pointer-events-none absolute left-1/2 top-0 h-72 w-[42rem] -translate-x-1/2 rounded-full bg-stone-50 blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6">
           <Reveal>
@@ -372,7 +372,7 @@ export default function Home() {
       </section>
 
       {/* ---------- How It Works ---------- */}
-      <section className="border-t border-slate-200 bg-stone-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-14">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -413,7 +413,7 @@ export default function Home() {
       </section>
 
       {/* ---------- Markets ---------- */}
-      <section className="py-24">
+      <section className="py-14">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -443,7 +443,7 @@ export default function Home() {
       </section>
 
       {/* ---------- Key Features ---------- */}
-      <section className="border-t border-slate-200 bg-stone-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-14">
         <div className="mx-auto max-w-7xl px-6">
           <Reveal>
             <SectionHeading
@@ -474,7 +474,7 @@ export default function Home() {
       </section>
 
       {/* ---------- Why Australians Choose EuroQuantum ---------- */}
-      <section className="py-24">
+      <section className="py-14">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6">
           <Reveal>
             <div className="mx-auto max-w-2xl text-center">
@@ -513,7 +513,7 @@ export default function Home() {
       </section>
 
       {/* ---------- AI vs Manual Trading ---------- */}
-      <section className="border-t border-slate-200 bg-stone-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-14">
         <div className="mx-auto max-w-5xl px-6">
           <Reveal>
             <SectionHeading
@@ -561,7 +561,7 @@ export default function Home() {
       </section>
 
       {/* ---------- Safe & Legit ---------- */}
-      <section className="py-24">
+      <section className="py-14">
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 md:grid-cols-2">
           <Reveal>
             <div className="text-center md:text-left">
@@ -646,7 +646,7 @@ export default function Home() {
       </section>
 
       {/* ---------- FAQs ---------- */}
-      <section className="border-t border-slate-200 bg-stone-50 py-24">
+      <section className="border-t border-slate-200 bg-stone-50 py-14">
         <div className="mx-auto max-w-3xl px-6">
           <script
             type="application/ld+json"
@@ -664,11 +664,11 @@ export default function Home() {
       </section>
 
       {/* ---------- Final CTA ---------- */}
-      <section className="py-24">
+      <section className="py-14">
         <div className="mx-auto max-w-5xl px-6">
           <Reveal>
             <div className="rounded-3xl bg-green-500/40 p-px">
-              <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-16 text-center md:px-16">
+              <div className="relative overflow-hidden rounded-3xl bg-white px-8 py-10 text-center md:px-16">
                 <div className="pointer-events-none absolute -left-20 -top-20 h-64 w-64 rounded-full bg-slate-500/[0.05] blur-[100px]" />
                 <div className="pointer-events-none absolute -bottom-20 -right-20 h-64 w-64 rounded-full bg-slate-500/[0.05] blur-[100px]" />
                 <div className="relative">
