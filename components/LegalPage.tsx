@@ -2,7 +2,7 @@ import type { ReactNode } from "react";
 import Reveal from "./Reveal";
 
 type LegalPageProps = {
-  eyebrow: string;
+  eyebrow?: string;
   title: string;
   subtitle: string;
   lastUpdated: string;
@@ -10,7 +10,6 @@ type LegalPageProps = {
 };
 
 export default function LegalPage({
-  eyebrow,
   title,
   subtitle,
   lastUpdated,
@@ -23,12 +22,7 @@ export default function LegalPage({
         <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
         <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
         <div className="relative mx-auto max-w-4xl px-6 text-center">
-          <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
-              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-              {eyebrow}
-            </span>
-          </Reveal>
+          
           <Reveal delay={100}>
             <h1 className="mt-6 font-display text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl">
               {title}

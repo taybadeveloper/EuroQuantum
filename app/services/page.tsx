@@ -43,12 +43,7 @@ export default function ServicesPage() {
         <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
         <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6 text-center">
-          <Reveal>
-            <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
-              <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-              Our Services
-            </span>
-          </Reveal>
+          
           <Reveal delay={100}>
             <h1 className="mx-auto mt-6 max-w-3xl font-display text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl">
               One Platform. <span className="text-gradient">Every Market.</span>

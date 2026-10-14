@@ -461,10 +461,6 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <Reveal>
             <div className="text-center lg:text-left">
-              <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
-                <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                Built for Australia
-              </span>
               <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
                 Built Around How <span className="text-gradient">Australians Trade</span>
               </h2>
@@ -552,10 +548,6 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <Reveal>
             <div className="text-center lg:text-left">
-              <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.18em] text-green-600">
-                <span className="h-1.5 w-1.5 rounded-full bg-green-500" />
-                Trust &amp; Safety
-              </span>
               <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
                 Is EuroQuantum <span className="text-gradient">Safe to Use?</span>
               </h2>
