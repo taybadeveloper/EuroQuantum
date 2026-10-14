@@ -256,22 +256,6 @@ export default function Home() {
                 final call to you.
               </p>
             </Reveal>
-            <Reveal delay={300}>
-              <ul className="hero-points mt-9 space-y-3">
-                {[
-                  "AI watches the markets 24/7 — you stay in control",
-                  "No app to download — runs in your browser",
-                  "Start from AU$250",
-                ].map((item) => (
-                  <li key={item} className="flex items-center justify-start gap-3 text-sm text-slate-700">
-                    <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-green-500/25 ring-1 ring-green-500/40">
-                      <IconCheck className="h-3 w-3 text-green-600" />
-                    </span>
-                    {item}
-                  </li>
-                ))}
-              </ul>
-            </Reveal>
           </div>
 
           <Reveal delay={250}>
@@ -279,6 +263,35 @@ export default function Home() {
               <SignupForm />
             </div>
           </Reveal>
+        </div>
+      </section>
+
+      {/* ---------- Marquee points ---------- */}
+      <section className="border-y border-slate-200 bg-white py-4">
+        <div className="relative overflow-hidden">
+          <div className="flex w-max animate-marquee">
+            {[
+              "AI watches the markets 24/7 — you stay in control",
+              "No app to download — runs in your browser",
+              "Start from AU$250",
+            ].concat([
+              "AI watches the markets 24/7 — you stay in control",
+              "No app to download — runs in your browser",
+              "Start from AU$250",
+            ]).map((item, i) => (
+              <div
+                key={i}
+                className="flex items-center gap-3 whitespace-nowrap px-8 text-sm text-slate-700"
+              >
+                <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-green-500/25 ring-1 ring-green-500/40">
+                  <IconCheck className="h-3 w-3 text-green-600" />
+                </span>
+                {item}
+              </div>
+            ))}
+          </div>
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-white to-transparent" />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-white to-transparent" />
         </div>
       </section>
 
