@@ -67,7 +67,7 @@ export default function Navbar() {
           })}
           <Link
             href="/get-started"
-            className="hidden rounded-full bg-green-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md lg:inline-flex"
+            className="hidden rounded-full bg-green-600 px-5 py-2 text-sm font-semibold text-white shadow-sm transition-all duration-300 hover:shadow-md md:inline-flex"
           >
             Get Started
           </Link>
@@ -85,7 +85,7 @@ export default function Navbar() {
       </nav>
 
       {open && (
-        <div className="border-t border-slate-200 bg-white px-6 pb-6 pt-3 shadow-lg md:hidden">
+        <div className="max-h-[calc(100dvh-4.5rem)] overflow-y-auto border-t border-slate-200 bg-white px-6 pb-6 pt-3 shadow-lg md:hidden">
           {links.map((link) => {
             const active = pathname === link.href;
             return (
