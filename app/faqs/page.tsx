@@ -74,7 +74,7 @@ export default function FaqsPage() {
   return (
     <>
       {/* ---------- Page hero ---------- */}
-      <section className="relative overflow-hidden border-b border-slate-300 pb-16 pt-28">
+      <section className="relative overflow-hidden border-b border-slate-300 pb-16 pt-30">
         <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
         <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
         <div className="relative mx-auto max-w-7xl px-6 text-center">

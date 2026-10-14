@@ -238,7 +238,7 @@ export default function Home() {
   return (
     <>
       {/* ---------- Hero ---------- */}
-      <section className="relative overflow-hidden pb-20 pt-28">
+      <section className="relative overflow-hidden pb-20 pt-30">
         <div className="pointer-events-none absolute -top-32 left-1/4 h-96 w-96 rounded-full bg-slate-500/[0.05] blur-[130px]" />
         <div className="pointer-events-none absolute right-0 top-40 h-96 w-96 rounded-full bg-slate-500/[0.05] blur-[130px]" />
 
