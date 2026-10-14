@@ -4,6 +4,7 @@ import SectionHeading from "@/components/SectionHeading";
 import { IconQuote } from "@/components/icons";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/reviews" },
   title: "Reviews",
   description:
     "What Australians say about EuroQuantum — an AI trading platform that studies the markets, highlights opportunities and leaves the final call to you.",

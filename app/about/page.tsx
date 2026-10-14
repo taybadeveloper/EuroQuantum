@@ -12,6 +12,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/about" },
   title: "About Us",
   description:
     "Learn about EuroQuantum — Australia's advanced trading and investment platform. Our story, mission, values and 12+ years of market expertise.",

@@ -4,6 +4,7 @@ import SignupForm from "@/components/SignupForm";
 import { IconCheck } from "@/components/icons";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/get-started" },
   title: "Get Started",
   description:
     "Create your free EuroQuantum account in under two minutes. Start trading from AU$250 with AI market insights.",

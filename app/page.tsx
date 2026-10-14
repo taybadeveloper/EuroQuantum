@@ -24,6 +24,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/" },
   title: {
     absolute: "EuroQuantum | AI Trading Platform in Australia from AU$250",
   },

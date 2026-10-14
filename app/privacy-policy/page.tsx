@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LegalPage, { LegalSection } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/privacy-policy" },
   title: "Privacy Policy",
   description:
     "Read EuroQuantum's privacy policy — how we collect, use, store and protect your personal information in accordance with the Australian Privacy Act 1988.",

@@ -7,6 +7,7 @@ import { services } from "@/lib/services";
 import { IconArrowRight } from "@/components/icons";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/services" },
   title: "Our Services",
   description:
     "Explore EuroQuantum's trading services — forex trading, CFD trading, crypto trading, managed portfolios, market analysis and risk management solutions.",

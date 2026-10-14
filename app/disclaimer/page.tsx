@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LegalPage, { LegalSection } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/disclaimer" },
   title: "Disclaimer",
   description:
     "Read EuroQuantum's risk disclaimer — trading leveraged products carries significant risk and the information on this website is general in nature.",

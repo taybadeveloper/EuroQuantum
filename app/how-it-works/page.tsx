@@ -11,6 +11,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/how-it-works" },
   title: "How It Works",
   description:
     "How EuroQuantum works in three simple steps — sign up free, fund your account from AU$250, and trade with AI market support. The final call is always yours.",

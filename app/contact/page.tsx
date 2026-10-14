@@ -4,6 +4,7 @@ import SignupForm from "@/components/SignupForm";
 import { IconClock, IconHeadset, IconMail, IconMapPin, IconPhone } from "@/components/icons";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/contact" },
   title: "Contact Us",
   description:
     "Get in touch with EuroQuantum — Australia's advanced trading and investment platform. Contact our Sydney office by email, phone or our online enquiry form.",

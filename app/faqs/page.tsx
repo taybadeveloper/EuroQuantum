@@ -4,6 +4,7 @@ import SectionHeading from "@/components/SectionHeading";
 import FaqAccordion from "@/components/FaqAccordion";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/faqs" },
   title: "FAQs",
   description:
     "Answers to common questions about EuroQuantum — Australia's AI trading platform. Deposits, withdrawals, markets, security and how to get started.",

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import LegalPage, { LegalSection } from "@/components/LegalPage";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/terms-and-conditions" },
   title: "Terms & Conditions",
   description:
     "Read the terms and conditions governing the use of EuroQuantum's website, trading platform and services.",

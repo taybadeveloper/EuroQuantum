@@ -16,6 +16,7 @@ import {
 } from "@/components/icons";
 
 export const metadata: Metadata = {
+  alternates: { canonical: "/features" },
   title: "Features",
   description:
     "Explore EuroQuantum's trading features — AI market scanning, clear trade signals, risk controls, real-time alerts and an easy dashboard that works on any device.",
