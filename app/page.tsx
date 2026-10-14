@@ -244,14 +244,6 @@ export default function Home() {
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
           <div className="text-center">
-            <Reveal className="hero-badge">
-              <span className="inline-flex items-center gap-2 rounded-full border border-green-500/30 bg-white px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.16em] text-green-600">
-                <span className="relative flex h-2 w-2">
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-green-600" />
-                </span>
-                Made for Australia
-              </span>
-            </Reveal>
             <Reveal delay={100}>
               <h1 className="hero-heading mt-6 font-display text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl xl:text-6xl">
                 The AI Trading Platform <span className="text-gradient">Australia</span> Can Count On
