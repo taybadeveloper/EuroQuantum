@@ -6,7 +6,6 @@ const currentYear = new Date().getFullYear();
 
 const quickLinks = [
   { href: "/", label: "Home" },
-  { href: "/about", label: "About Us" },
   { href: "/features", label: "Features" },
   { href: "/how-it-works", label: "How It Works" },
   { href: "/reviews", label: "Reviews" },
