@@ -82,7 +82,7 @@ export default function Footer() {
           <h4 className="text-xs font-semibold uppercase tracking-[0.16em] text-green-600">
             Risk Warning
           </h4>
-          <p className="mt-3 text-xs leading-relaxed text-slate-500">
+          <p className="mt-3 text-sm leading-relaxed text-slate-600">
             Trading crypto, forex, stocks and commodities involves significant
             risk and may not suit every investor. You may lose some or all of
             your capital. Past performance does not guarantee future results.
@@ -90,7 +90,7 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="mt-10 border-t border-slate-200 pt-8 text-center text-xs text-slate-500">
+        <div className="mt-10 border-t border-slate-200 pt-8 text-center text-sm text-slate-600">
           <p>© {currentYear} EuroQuantum. All rights reserved.</p>
         </div>
       </div>
