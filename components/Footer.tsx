@@ -4,12 +4,19 @@ import { IconMail } from "./icons";
 
 const currentYear = new Date().getFullYear();
 
-const quickLinks = [
+const exploreLinks = [
   { href: "/", label: "Home" },
+  { href: "/about", label: "AI Trading" },
   { href: "/features", label: "Features" },
   { href: "/how-it-works", label: "How It Works" },
-  { href: "/reviews", label: "Reviews" },
-  { href: "/faqs", label: "FAQs" },
+  { href: "/reviews", label: "EuroQuantum Review" },
+  { href: "/faqs", label: "FAQ" },
+];
+
+const legalLinks = [
+  { href: "/privacy-policy", label: "Privacy Policy" },
+  { href: "/terms-and-conditions", label: "Terms And Conditions" },
+  { href: "/disclaimer", label: "Risk Disclaimer" },
   { href: "/contact", label: "Contact" },
 ];
 
@@ -25,14 +32,21 @@ export default function Footer() {
               institutional-grade technology, deep liquidity and expert insights
               for every trader.
             </p>
+            <a
+              href="mailto:support@euroquantum-au.com"
+              className="mt-4 inline-flex items-center gap-2 text-sm text-slate-500 transition-colors hover:text-green-600"
+            >
+              <IconMail className="h-4 w-4 shrink-0 text-green-600" />
+              support@euroquantum-au.com
+            </a>
           </div>
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-900">
-              Quick Links
+              Explore
             </h3>
             <ul className="mt-5 space-y-3">
-              {quickLinks.map((link) => (
+              {exploreLinks.map((link) => (
                 <li key={link.href}>
                   <Link
                     href={link.href}
@@ -47,18 +61,19 @@ export default function Footer() {
 
           <div>
             <h3 className="text-sm font-semibold uppercase tracking-[0.16em] text-slate-900">
-              Contact
+              Legal
             </h3>
-            <ul className="mt-5 space-y-3 text-sm text-slate-500">
-              <li className="flex items-start justify-center gap-2.5 md:justify-start">
-                <IconMail className="mt-0.5 h-4 w-4 shrink-0 text-green-600" />
-                <a
-                  href="mailto:support@euroquantum-au.com"
-                  className="transition-colors hover:text-green-600"
-                >
-                  support@euroquantum-au.com
-                </a>
-              </li>
+            <ul className="mt-5 space-y-3">
+              {legalLinks.map((link) => (
+                <li key={link.href}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-slate-500 transition-colors hover:text-green-600"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
             </ul>
           </div>
         </div>
@@ -75,19 +90,8 @@ export default function Footer() {
           </p>
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-8 text-xs text-slate-500 md:flex-row">
+        <div className="mt-10 border-t border-slate-200 pt-8 text-center text-xs text-slate-500">
           <p>© {currentYear} EuroQuantum. All rights reserved.</p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <Link href="/privacy-policy" className="transition-colors hover:text-slate-600">
-              Privacy Policy
-            </Link>
-            <Link href="/terms-and-conditions" className="transition-colors hover:text-slate-600">
-              Terms &amp; Conditions
-            </Link>
-            <Link href="/disclaimer" className="transition-colors hover:text-slate-600">
-              Disclaimer
-            </Link>
-          </div>
         </div>
       </div>
     </footer>
