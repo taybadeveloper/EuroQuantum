@@ -17,7 +17,7 @@ export default function GetStartedPage() {
         <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
         <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
 
-        <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6">
           <div className="text-center lg:text-left">
             
             <Reveal delay={100}>

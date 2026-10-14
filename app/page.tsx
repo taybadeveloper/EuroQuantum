@@ -242,7 +242,7 @@ export default function Home() {
         <div className="pointer-events-none absolute -top-32 left-1/4 h-96 w-96 rounded-full bg-slate-500/[0.05] blur-[130px]" />
         <div className="pointer-events-none absolute right-0 top-40 h-96 w-96 rounded-full bg-slate-500/[0.05] blur-[130px]" />
 
-        <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6">
           <div className="text-center lg:text-left">
             <Reveal delay={100}>
               <h1 className="hero-heading mt-6 font-display text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl xl:text-6xl">
@@ -450,7 +450,7 @@ export default function Home() {
 
       {/* ---------- Why Australians Choose EuroQuantum ---------- */}
       <section className="py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl items-center gap-16 px-6">
           <Reveal>
             <div className="text-center lg:text-left">
               <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
@@ -537,7 +537,7 @@ export default function Home() {
 
       {/* ---------- Safe & Legit ---------- */}
       <section className="py-24">
-        <div className="mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
+        <div className="mx-auto grid max-w-7xl items-center gap-16 px-6">
           <Reveal>
             <div className="text-center lg:text-left">
               <h2 className="mt-5 font-display text-3xl font-bold tracking-tight text-slate-900 md:text-4xl">
