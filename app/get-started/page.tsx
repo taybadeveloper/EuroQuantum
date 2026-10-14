@@ -17,8 +17,8 @@ export default function GetStartedPage() {
         <div className="pointer-events-none absolute -top-24 left-1/4 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
         <div className="pointer-events-none absolute right-0 top-20 h-80 w-80 rounded-full bg-slate-500/[0.05] blur-[120px]" />
 
-        <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 lg:grid-cols-2">
-          <div className="text-center lg:text-left">
+        <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-6 md:grid-cols-2">
+          <div className="text-center md:text-left">
             
             <Reveal delay={100}>
               <h1 className="hero-heading mt-6 font-display text-4xl font-bold leading-[1.1] tracking-tight text-slate-900 sm:text-5xl">
@@ -27,7 +27,7 @@ export default function GetStartedPage() {
               </h1>
             </Reveal>
             <Reveal delay={200}>
-              <p className="hero-paragraph mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
+              <p className="hero-paragraph mx-auto mt-6 max-w-xl text-lg leading-relaxed text-slate-600 md:mx-0">
                 Join EuroQuantum and let the AI do the heavy market research
                 for you. Sign up free, fund from AU$250, and trade crypto,
                 forex, stocks and commodities with confidence.
