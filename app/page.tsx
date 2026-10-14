@@ -312,7 +312,7 @@ export default function Home() {
         <div className="mx-auto grid max-w-7xl grid-cols-1 divide-y divide-slate-200 px-6 sm:grid-cols-2 lg:grid-cols-4 lg:divide-x lg:divide-y-0">
           {trustItems.map((item, i) => (
             <Reveal key={item.title} delay={i * 80}>
-              <div className="flex items-center justify-center gap-4 px-2 py-8 text-center lg:justify-start lg:px-8 lg:text-left">
+              <div className="flex items-center justify-start gap-4 px-2 py-8 text-left lg:px-8">
                 <span className="grid h-11 w-11 shrink-0 place-items-center rounded-xl bg-green-500/15 text-green-600 ring-1 ring-slate-900/10">
                   {item.icon}
                 </span>
