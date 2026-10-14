@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useState, type FormEvent } from "react";
+import { useEffect, useState, type FormEvent } from "react";
 import PhoneInput, { countries, type Country } from "./PhoneInput";
 import { IconCheck } from "./icons";
 
@@ -19,6 +19,34 @@ export default function SignupForm() {
     email: "",
     phone: "",
   });
+
+  // Detect the visitor's country by IP and preselect its code + flag
+  useEffect(() => {
+    let cancelled = false;
+    const applyIso = (iso?: string) => {
+      if (cancelled || !iso) return;
+      const match = countries.find((c) => c.iso === iso.toLowerCase());
+      if (match) setCountry(match);
+    };
+    (async () => {
+      try {
+        const res = await fetch("https://ipwho.is/");
+        const data = await res.json();
+        applyIso(data?.country_code);
+      } catch {
+        try {
+          const res = await fetch("https://freeipapi.com/api/json");
+          const data = await res.json();
+          applyIso(data?.countryCode);
+        } catch {
+          // keep default country
+        }
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   const update = (field: keyof typeof form) => (value: string) =>
     setForm((prev) => ({ ...prev, [field]: value }));
