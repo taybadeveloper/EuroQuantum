@@ -45,7 +45,7 @@ export default function GetStartedPage() {
                   "Bank-level encryption keeps your details safe",
                   "Works in any browser — no app to download",
                 ].map((item) => (
-                  <li key={item} className="flex items-center justify-center gap-3 text-sm text-slate-700">
+                  <li key={item} className="flex items-center justify-start gap-3 text-left text-sm text-slate-700 lg:justify-center lg:text-center">
                     <span className="grid h-5 w-5 shrink-0 place-items-center rounded-full bg-green-500/25 ring-1 ring-green-500/40">
                       <IconCheck className="h-3 w-3 text-green-600" />
                     </span>
