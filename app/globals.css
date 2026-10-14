@@ -102,10 +102,6 @@ body {
   text-align: center;
 }
 
-.hero-points li {
-  justify-content: center;
-}
-
 @media (min-width: 96rem) {
   .hero-heading,
   .hero-paragraph {
